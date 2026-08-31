@@ -1,0 +1,49 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Experiment tracking and generated outputs
+**/outputs/**
+!outputs/
+!outputs/.gitkeep
+wandb/
+**/wandb/
+experiment*/
+runs/
+logs/
+*.log
+
+# Datasets are distributed separately
+dataset/local/*
+!dataset/local/pointcloud/
+!dataset/local/projection/
+!dataset/local/pointcloud/.gitkeep
+!dataset/local/projection/.gitkeep
+
+# Generated model artifacts
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.engine
+
+# Pinned third-party source is fetched on demand
+lidargaitpp/third_party/OpenGait/
+
+# Generated configs and temporary files
+generated_configs/
+*.tmp
+*.bak
+*.orig

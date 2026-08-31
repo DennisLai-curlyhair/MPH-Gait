@@ -1,0 +1,16 @@
+method,seed,split,release_filename,size_bytes,sha256,download_url
+mph_gait,0,0,mph_gait/seed_0/split_0/best.pt,4943759,10b62e11786828e51f2287bd47cfbdf8c83ebf1e565d1426ec217ddff2f8222d,TBD
+mph_gait,0,1,mph_gait/seed_0/split_1/best.pt,4943759,e4b035f6625aa5d7e71348562878801356edbf3e11e2014fc9558773af0fd601,TBD
+mph_gait,0,2,mph_gait/seed_0/split_2/best.pt,4943759,76ca554005b91f8cb1337f11331a6953737ced5cfd388e9f1cd75d1c20efc9f2,TBD
+mph_gait,0,3,mph_gait/seed_0/split_3/best.pt,4943759,211f88d873218c0594fdd99817ef1d4e2b6a7eea7b0aecbf9b24b284e0a7cb4a,TBD
+mph_gait,0,4,mph_gait/seed_0/split_4/best.pt,4943759,49e7c289175dd891d121cbd819ce837b8c08182276a96b92d6ee87101e9fc510,TBD
+mph_gait,1,0,mph_gait/seed_1/split_0/best.pt,4943759,1367b9b41d9b9c9a5722d7d6e476f163c7fe1009e04a80cb03bda1d7809a41a8,TBD
+mph_gait,1,1,mph_gait/seed_1/split_1/best.pt,4943759,db48eb2843c821d49f8f5d24f047b835e293b147d7d9977f6d92b5479cfc0c14,TBD
+mph_gait,1,2,mph_gait/seed_1/split_2/best.pt,4943759,90406020ab854d4e452b343404e9d33e4ca0661123c7ef4c521f35dff27568b7,TBD
+mph_gait,1,3,mph_gait/seed_1/split_3/best.pt,4943759,e6c1a1501c5fc4809069ba9dd44a4ae53f2f45cf3e860705184df98c88394462,TBD
+mph_gait,1,4,mph_gait/seed_1/split_4/best.pt,4943759,29cef5de249af76240084c26b64fbed560ff173c7d76a5f975d361f0a86bf535,TBD
+mph_gait,2,0,mph_gait/seed_2/split_0/best.pt,4943759,863b92bb18e5759d15d4b5c0acb484fc7a99e52818eb2c9af8ee98a22dd0ed34,TBD
+mph_gait,2,1,mph_gait/seed_2/split_1/best.pt,4943759,5cbfc72ff8f45e4eee8cf0b8d5e4c0b1fe31d330b76ecf112b4c74e773d514b8,TBD
+mph_gait,2,2,mph_gait/seed_2/split_2/best.pt,4943759,17788041ac61df754565b7632f755fb140206d86a8f4396cf7c7b49fd1adb510,TBD
+mph_gait,2,3,mph_gait/seed_2/split_3/best.pt,4943759,48e348fa6067f4fbab0751bac31d12e6235ac8686c58c87d1cd90233e569be3d,TBD
+mph_gait,2,4,mph_gait/seed_2/split_4/best.pt,4943759,2a3bc77130f4208ebaf793eea94e5be6cdbcc815283d23b42158b2adf8367ed7,TBD

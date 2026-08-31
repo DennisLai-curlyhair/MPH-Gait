@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="2300" height="1220" viewBox="0 0 2300 1220" role="img" aria-labelledby="title desc">
+<title id="title">Paper-style architecture of PointNet-TMax and MPH-Gait</title>
+<desc id="desc">Network block diagram showing tensor flow, the global PointNet path, multi-scale point hierarchy, within-frame Transformer encoder, bounded residual fusion, and retrieval descriptor.</desc>
+<defs>
+  <marker id="a" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#1f2937"/></marker>
+  <marker id="ab" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#2563eb"/></marker>
+  <marker id="ao" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#c2410c"/></marker>
+  <marker id="ag" viewBox="0 0 10 10" refX="8.5" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0L10 5L0 10Z" fill="#047857"/></marker>
+  <style>
+  text{font-family:Arial,Helvetica,sans-serif;fill:#111827;letter-spacing:0}.pt{font-size:30px;font-weight:700}.pn{font-size:19px;font-weight:600;fill:#475569}.l{font-size:20px;font-weight:700;text-anchor:middle}.s{font-size:17px;fill:#334155;text-anchor:middle}.t{font-size:15px;fill:#475569;text-anchor:middle}.d{font-size:17px;font-weight:700;fill:#334155;text-anchor:middle}.f{font-family:Georgia,serif;font-size:21px;font-style:italic;font-weight:700;text-anchor:middle;fill:#065f46}.ar{fill:none;stroke:#1f2937;stroke-width:3;marker-end:url(#a)}.arb{fill:none;stroke:#2563eb;stroke-width:3;marker-end:url(#ab)}.aro{fill:none;stroke:#c2410c;stroke-width:3;marker-end:url(#ao)}.arg{fill:none;stroke:#047857;stroke-width:3;marker-end:url(#ag)}.route{fill:none;stroke:#9a3412;stroke-width:2.5;stroke-dasharray:8 6;marker-end:url(#ao)}.m{stroke-width:2.2;rx:5}.sh{fill:#dff7f5;stroke:#0f766e}.gl{fill:#dbeafe;stroke:#2563eb}.lo{fill:#ffedd5;stroke:#c2410c}.at{fill:#fef3c7;stroke:#b45309}.fu{fill:#d1fae5;stroke:#047857}.ou{fill:#dcfce7;stroke:#15803d}.tr{fill:#f3e8ff;stroke:#7e22ce;stroke-dasharray:7 5}.tf{fill:#bfdbfe;stroke:#1d4ed8;stroke-width:2}.ts{fill:#93c5fd;stroke:#1d4ed8;stroke-width:2}.tt{fill:#dbeafe;stroke:#1d4ed8;stroke-width:2}.fine{fill:#fdba74;stroke:#c2410c;stroke-width:1.8}.coarse{fill:#fde68a;stroke:#b45309;stroke-width:1.8}.frame{fill:#f8fafc;stroke:#64748b;stroke-width:2}.sep{stroke:#94a3b8;stroke-width:1.8}
+  </style>
+</defs>
+<rect width="2300" height="1220" fill="#fff"/>
+
+<!-- (a) baseline -->
+<text x="45" y="52" class="pt">(a) PointNet-TMax baseline</text>
+<text x="2250" y="52" class="pn" text-anchor="end">313,664 parameters</text>
+<line x1="45" y1="70" x2="2255" y2="70" class="sep"/>
+<g transform="translate(65 120)">
+  <rect x="28" width="112" height="150" class="frame"/><rect x="14" y="12" width="112" height="150" class="frame"/><rect y="24" width="112" height="150" class="frame"/>
+  <g fill="#475569"><circle cx="18" cy="58" r="3"/><circle cx="29" cy="45" r="3"/><circle cx="39" cy="70" r="3"/><circle cx="48" cy="38" r="3"/><circle cx="54" cy="61" r="3"/><circle cx="63" cy="88" r="3"/><circle cx="70" cy="48" r="3"/><circle cx="76" cy="74" r="3"/><circle cx="83" cy="103" r="3"/><circle cx="91" cy="59" r="3"/><circle cx="97" cy="89" r="3"/><circle cx="55" cy="113" r="3"/><circle cx="40" cy="101" r="3"/><circle cx="27" cy="125" r="3"/><circle cx="78" cy="128" r="3"/></g>
+  <text x="70" y="202" class="l">Point sequence</text><text x="70" y="228" class="d">T &#215; N &#215; 3</text>
+</g>
+<path d="M225 205H292" class="ar"/>
+<rect x="295" y="150" width="180" height="110" class="m sh"/><text x="385" y="190" class="l">Center XYZ</text><text x="385" y="218" class="s">per frame</text><text x="385" y="244" class="t">retain metric scale</text>
+<path d="M475 205H535" class="ar"/>
+<polygon points="540,135 740,158 740,252 540,275" class="sh" stroke-width="2.2"/><text x="640" y="183" class="l">Shared PointNet</text><text x="640" y="214" class="s">3 &#8594; 64 &#8594; 128</text><text x="640" y="240" class="s">&#8594; 256 &#8594; 512</text><text x="640" y="303" class="d">&#215; T frames</text>
+<path d="M740 205H810" class="ar"/>
+<g transform="translate(820 147)"><polygon points="18,0 120,0 142,18 40,18" class="tt"/><polygon points="120,0 142,18 142,116 120,98" class="ts"/><rect x="18" y="18" width="102" height="98" class="tf"/><rect x="9" y="27" width="102" height="98" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.5" opacity=".65"/><rect y="36" width="102" height="98" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.5" opacity=".65"/><text x="71" y="75" class="l">F<tspan baseline-shift="sub" font-size="14">t</tspan></text><text x="71" y="102" class="d">N &#215; 512</text><text x="71" y="164" class="t">per-point features</text></g>
+<path d="M962 205H1020" class="arb"/>
+<rect x="1025" y="155" width="165" height="100" class="m gl"/><text x="1108" y="195" class="l">Max Pool</text><text x="1108" y="226" class="s">over N points</text>
+<path d="M1190 205H1250" class="arb"/>
+<g transform="translate(1255 157)"><rect x="20" width="42" height="96" class="tf"/><rect x="12" y="7" width="42" height="96" fill="#dbeafe" stroke="#1d4ed8" stroke-width="1.6"/><rect x="4" y="14" width="42" height="96" fill="#eff6ff" stroke="#1d4ed8" stroke-width="1.6"/><text x="100" y="45" class="l">f<tspan baseline-shift="sub" font-size="14">1:T</tspan></text><text x="100" y="77" class="d">T &#215; 512</text><text x="100" y="130" class="t">frame descriptors</text></g>
+<path d="M1405 205H1465" class="arb"/>
+<rect x="1470" y="155" width="170" height="100" class="m gl"/><text x="1555" y="194" class="l">Temporal Max</text><text x="1555" y="225" class="s">over T frames</text>
+<path d="M1640 205H1700" class="arb"/>
+<g transform="translate(1710 142)"><polygon points="0,15 38,0 38,125 0,140" class="tf"/><text x="112" y="54" class="l">Embedding head</text><text x="112" y="84" class="s">Linear + BN + ReLU</text><text x="112" y="112" class="d">256-D</text></g>
+<path d="M1930 205H1960" class="arb"/>
+<rect x="1965" y="155" width="125" height="100" class="m ou"/><text x="2028" y="194" class="l">BNNeck</text><text x="2028" y="226" class="d">256-D</text>
+<path d="M2090 185H2120V125H2145" class="ar"/><path d="M2090 225H2120V285H2145" class="arg"/>
+<rect x="2145" y="92" width="42" height="66" class="m tr"/><text x="2166" y="126" class="t" transform="rotate(90 2166 126)">CE</text>
+<rect x="2145" y="252" width="42" height="66" class="m ou"/><text x="2166" y="285" class="t" transform="rotate(90 2166 285)">Cosine</text>
+<text x="1100" y="355" class="pn" text-anchor="middle">Global point aggregation followed by order-invariant temporal max pooling</text>
+
+<!-- (b) MPH-Gait -->
+<line x1="45" y1="402" x2="2255" y2="402" class="sep"/>
+<text x="45" y="452" class="pt">(b) MPH-Gait: Multi-scale Point-Hierarchy Gait Network</text>
+<text x="2250" y="452" class="pn" text-anchor="end">405,954 parameters (+29.4%)</text>
+<g transform="translate(55 610)"><rect x="24" width="105" height="145" class="frame"/><rect x="12" y="12" width="105" height="145" class="frame"/><rect y="24" width="105" height="145" class="frame"/><g fill="#475569"><circle cx="18" cy="57" r="3"/><circle cx="29" cy="43" r="3"/><circle cx="38" cy="72" r="3"/><circle cx="49" cy="38" r="3"/><circle cx="56" cy="64" r="3"/><circle cx="65" cy="89" r="3"/><circle cx="73" cy="49" r="3"/><circle cx="79" cy="76" r="3"/><circle cx="87" cy="104" r="3"/><circle cx="94" cy="61" r="3"/><circle cx="98" cy="91" r="3"/><circle cx="56" cy="116" r="3"/><circle cx="39" cy="102" r="3"/><circle cx="27" cy="128" r="3"/><circle cx="80" cy="131" r="3"/></g><text x="64" y="200" class="l">Point sequence</text><text x="64" y="228" class="d">T &#215; N &#215; 3</text></g>
+<path d="M190 700H245" class="ar"/>
+<rect x="250" y="648" width="160" height="104" class="m sh"/><text x="330" y="688" class="l">Center XYZ</text><text x="330" y="718" class="s">per frame</text><text x="330" y="743" class="t">metric scale</text>
+<path d="M410 700H460" class="ar"/>
+<polygon points="465,624 665,648 665,752 465,776" class="sh" stroke-width="2.2"/><text x="565" y="674" class="l">Shared PointNet</text><text x="565" y="705" class="s">3 &#8594; 64 &#8594; 128</text><text x="565" y="732" class="s">&#8594; 256 &#8594; 512</text><text x="565" y="808" class="d">&#215; T frames</text>
+<path d="M665 700H700" class="ar"/><circle cx="700" cy="700" r="7" fill="#1f2937"/>
+
+<!-- global branch -->
+<text x="735" y="510" class="pn" fill="#1d4ed8">GLOBAL IDENTITY PATH</text><path d="M700 700V570H755" class="arb"/>
+<g transform="translate(770 513)"><polygon points="16,0 112,0 132,16 36,16" class="tt"/><polygon points="112,0 132,16 132,104 112,88" class="ts"/><rect x="16" y="16" width="96" height="88" class="tf"/><text x="64" y="60" class="l">F<tspan baseline-shift="sub" font-size="14">t</tspan></text><text x="64" y="88" class="d">N &#215; 512</text></g>
+<path d="M902 570H955" class="arb"/><rect x="960" y="520" width="150" height="100" class="m gl"/><text x="1035" y="560" class="l">Point Max</text><text x="1035" y="591" class="s">N &#8594; 1</text>
+<path d="M1110 570H1160" class="arb"/><rect x="1165" y="520" width="165" height="100" class="m gl"/><text x="1248" y="560" class="l">Temporal Max</text><text x="1248" y="591" class="s">T &#8594; 1</text>
+<path d="M1330 570H1380" class="arb"/><rect x="1385" y="510" width="190" height="120" class="m gl"/><text x="1480" y="550" class="l">Global head</text><text x="1480" y="581" class="s">Linear + BN + ReLU</text><text x="1480" y="611" class="d">z<tspan baseline-shift="sub" font-size="14">g</tspan> : 256-D</text>
+
+<!-- local branch -->
+<text x="735" y="755" class="pn" fill="#9a3412">LOCAL POINT-HIERARCHY RESIDUAL</text><path d="M700 700V835H755" class="aro"/>
+<g transform="translate(765 790)"><rect width="150" height="130" class="m lo"/><line x1="75" y1="0" x2="75" y2="130" stroke="#c2410c" stroke-width="1.5"/><line x1="0" y1="65" x2="150" y2="65" stroke="#c2410c" stroke-width="1.5"/><line x1="37.5" y1="0" x2="37.5" y2="130" stroke="#c2410c"/><line x1="112.5" y1="0" x2="112.5" y2="130" stroke="#c2410c"/><line x1="0" y1="32.5" x2="150" y2="32.5" stroke="#c2410c"/><line x1="0" y1="97.5" x2="150" y2="97.5" stroke="#c2410c"/><text x="75" y="158" class="l">Regular 3D windows</text><text x="75" y="185" class="s">fine: 2&#215;2&#215;4 (16)</text><text x="75" y="210" class="s">coarse: 1&#215;2&#215;2 (4)</text></g>
+<path d="M915 855H970" class="aro"/>
+<polygon points="975,795 1135,818 1135,912 975,935" class="lo" stroke-width="2.2"/><text x="1055" y="840" class="l">Window</text><text x="1055" y="869" class="l">Tokenizer</text><text x="1055" y="899" class="t">content + position</text><text x="1055" y="960" class="d">&#215; T frames</text>
+<path d="M1135 855H1180" class="aro"/>
+<g transform="translate(1190 782)"><rect y="8" width="28" height="148" class="fine"/><rect x="8" y="4" width="28" height="148" class="fine"/><rect x="16" width="28" height="148" class="fine"/><rect x="56" y="26" width="35" height="122" class="coarse"/><rect x="65" y="20" width="35" height="122" class="coarse"/><text x="50" y="184" class="l">Hierarchy tokens</text><text x="50" y="212" class="d">20 &#215; 64-D / frame</text></g>
+<path d="M1295 855H1340" class="aro"/>
+<g transform="translate(1345 750)"><rect width="260" height="260" rx="14" fill="#fffaf0" stroke="#b45309" stroke-width="2.5"/><text x="130" y="33" class="l">Within-frame Transformer</text><rect x="35" y="54" width="190" height="47" class="m at"/><text x="130" y="84" class="s">Multi-Head Self-Attention</text><rect x="60" y="112" width="140" height="38" rx="4" fill="#fefce8" stroke="#a16207" stroke-width="1.8"/><text x="130" y="137" class="s">Add &amp; Norm</text><rect x="35" y="163" width="190" height="42" class="m at"/><text x="130" y="190" class="s">Feed Forward Network</text><rect x="60" y="216" width="140" height="31" rx="4" fill="#fefce8" stroke="#a16207" stroke-width="1.8"/><text x="130" y="238" class="t">Add &amp; Norm</text><path d="M25 77H12V131H60" fill="none" stroke="#92400e" stroke-width="2"/><path d="M25 184H12V231H60" fill="none" stroke="#92400e" stroke-width="2"/><text x="130" y="286" class="d">1 layer, 4 heads</text></g>
+<path d="M1605 855H1640" class="aro"/><rect x="1645" y="795" width="180" height="120" class="m lo"/><text x="1735" y="831" class="l">Token Pool</text><text x="1735" y="861" class="s">masked mean + max</text><text x="1735" y="891" class="d">h<tspan baseline-shift="sub" font-size="14">t</tspan> : 64-D</text>
+<path d="M1735 915V964" class="aro"/><rect x="1645" y="970" width="180" height="105" class="m lo"/><text x="1735" y="1005" class="l">Temporal Max</text><text x="1735" y="1033" class="s">Linear + LayerNorm</text><text x="1735" y="1061" class="d">256-D</text>
+<path d="M1825 1022H1860V795H1880" class="aro"/><rect x="1885" y="735" width="175" height="120" class="m fu"/><text x="1972" y="773" class="l">Residual</text><text x="1972" y="803" class="s">L2 direction</text><text x="1972" y="832" class="d">&#948;<tspan baseline-shift="sub" font-size="14">h</tspan> : 256-D</text>
+<path d="M410 752V1088H735V900H765" class="route"/><text x="710" y="1118" class="t" fill="#9a3412">min-max XYZ is used only to route points into windows</text>
+
+<!-- fusion and descriptor -->
+<circle cx="1885" cy="570" r="35" fill="#d1fae5" stroke="#047857" stroke-width="3"/><text x="1885" y="580" font-size="34" font-weight="700" text-anchor="middle" fill="#065f46">+</text>
+<path d="M1575 570H1850" class="arg"/><path d="M1972 735V650H1885V605" class="arg"/>
+<text x="1885" y="675" class="f">z = z<tspan baseline-shift="sub" font-size="14">g</tspan> + w&#948;<tspan baseline-shift="sub" font-size="14">h</tspan></text><text x="1885" y="705" class="s">w = 0.20 tanh(&#945;)</text>
+<path d="M1920 570H1970" class="arg"/>
+<g transform="translate(1980 500)"><polygon points="0,18 46,0 46,140 0,158" fill="#bbf7d0" stroke="#15803d" stroke-width="2.2"/><text x="112" y="50" class="l">BNNeck</text><text x="112" y="81" class="d">256-D descriptor</text><text x="112" y="110" class="s">L2 normalized</text></g>
+<path d="M2160 570H2200" class="arg"/><text x="2250" y="530" class="t">Cosine</text><text x="2250" y="550" class="t">retrieval</text>
+
+<g transform="translate(820 1155)"><rect width="20" height="20" class="m sh"/><text x="30" y="17" class="s" text-anchor="start">shared stem</text><rect x="180" width="20" height="20" class="m gl"/><text x="210" y="17" class="s" text-anchor="start">global path</text><rect x="350" width="20" height="20" class="m lo"/><text x="380" y="17" class="s" text-anchor="start">point hierarchy</text><rect x="560" width="20" height="20" class="m at"/><text x="590" y="17" class="s" text-anchor="start">token mixer</text><rect x="735" width="20" height="20" class="m fu"/><text x="765" y="17" class="s" text-anchor="start">bounded correction</text></g>
+<text x="45" y="1200" class="pn">Self-attention mixes the 20 fine/coarse tokens within each frame; temporal aggregation remains max pooling.</text>
+</svg>

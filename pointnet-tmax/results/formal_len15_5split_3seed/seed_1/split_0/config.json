@@ -1,0 +1,764 @@
+{
+  "experiment": {
+    "root": "<RELEASE_OUTPUT_ROOT>/pointnet_tmax",
+    "name": "pointnet_tmax_len15_fixed_special5",
+    "seed": 1
+  },
+  "method": {
+    "family": "pointnet_tmax",
+    "id": "pointnet_tmax",
+    "role": "lightweight_pointcloud_baseline",
+    "implementation": "pointnet_tmax.model.TemporalPointNetV1",
+    "research_target": "same_view_special_clothing"
+  },
+  "protocol": {
+    "enabled": true,
+    "name": "fixed_special5_subject_holdout_5split_v1",
+    "version": "fixed_special5_subject_holdout_5split_v1_20260724",
+    "split_index": 0,
+    "val_group_offset": 1,
+    "fixed_special_test_ids": [
+      3,
+      7,
+      18,
+      19,
+      26
+    ],
+    "development_groups": [
+      [
+        1,
+        5,
+        9,
+        11,
+        20
+      ],
+      [
+        12,
+        17,
+        21,
+        22,
+        25
+      ],
+      [
+        2,
+        10,
+        14,
+        24,
+        27
+      ],
+      [
+        4,
+        8,
+        13,
+        16,
+        23
+      ],
+      [
+        6,
+        15,
+        28,
+        29
+      ]
+    ]
+  },
+  "data": {
+    "root": "<DATASET_ROOT>/pointcloud",
+    "dataset_name": "PersonRecognitionWalking_29",
+    "modality": "pointcloud",
+    "coordinate_adapter": "kinect_xyz_mm_to_forward_lateral_height_m_v1",
+    "num_points": 1024,
+    "clip_len": 15,
+    "drop_first_frames": 30,
+    "random_point_sample_train": true,
+    "pad_short": true,
+    "train_split": "train",
+    "val_split": "testA_probe",
+    "batch_size": 16,
+    "num_workers": 4,
+    "loader_seed": 1,
+    "train_filters": {
+      "clothes_ids": [
+        2,
+        3
+      ],
+      "condition_tags": [
+        "normal"
+      ]
+    },
+    "val_filters": {
+      "clothes_ids": [
+        1
+      ]
+    },
+    "train_loader_seed": 1,
+    "eval_loader_seed": 100001
+  },
+  "model": {
+    "name": "pointnet_tmax",
+    "num_classes": 29,
+    "in_channels": 3,
+    "point_channels": [
+      64,
+      128,
+      256,
+      512
+    ],
+    "embedding_dim": 256,
+    "temporal_pool": "max",
+    "dropout": 0.0,
+    "point_normalization": "center"
+  },
+  "loss": {
+    "ce_scale": 1.0
+  },
+  "train": {
+    "epochs": 50,
+    "device": "auto",
+    "amp": false,
+    "deterministic": true,
+    "cudnn_benchmark": false,
+    "log_interval": 20,
+    "save_every": 10,
+    "retrieval_eval_every": 1,
+    "selection_metric": "val_retrieval_mAP",
+    "selection_pair": "val",
+    "best_tie_break": "none",
+    "grad_clip_norm": 1.0,
+    "nonfinite_policy": "raise",
+    "max_nonfinite_batches": 0
+  },
+  "optimizer": {
+    "name": "adamw",
+    "lr": 0.001,
+    "weight_decay": 0.01
+  },
+  "scheduler": {
+    "name": "cosine"
+  },
+  "retrieval": {
+    "metric": "cosine",
+    "ranks": [
+      1,
+      5
+    ],
+    "normalize_embeddings": true,
+    "uniform_gallery_splits": [
+      "val_gallery",
+      "val_probe",
+      "gallery"
+    ],
+    "personal_splits": [
+      "testA_probe"
+    ],
+    "special_splits": [
+      "testB_probe"
+    ],
+    "uniform_filters": {
+      "clothes_ids": [
+        2,
+        3
+      ],
+      "condition_tags": [
+        "normal"
+      ]
+    },
+    "c2_filters": {
+      "clothes_ids": [
+        2
+      ],
+      "condition_tags": [
+        "normal"
+      ]
+    },
+    "c3_filters": {
+      "clothes_ids": [
+        3
+      ],
+      "condition_tags": [
+        "normal"
+      ]
+    },
+    "c1_filters": {
+      "clothes_ids": [
+        1
+      ]
+    },
+    "special_filters": {
+      "clothes_ids": [
+        4,
+        5,
+        7
+      ]
+    },
+    "c4c5_normal_filters": {
+      "clothes_ids": [
+        4,
+        5
+      ],
+      "condition_tags": [
+        "normal"
+      ]
+    },
+    "c7_filters": {
+      "clothes_ids": [
+        7
+      ]
+    },
+    "all_query_filters": {
+      "clothes_ids": [
+        1,
+        4,
+        5,
+        7
+      ]
+    },
+    "pairs": {
+      "val": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testA_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            1
+          ]
+        },
+        "gallery_id_source": "val_ids",
+        "probe_id_source": "val_ids"
+      },
+      "val_c2_to_c3": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "gallery_id_source": "val_ids",
+        "probe_id_source": "val_ids"
+      },
+      "val_c3_to_c2": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            2
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "gallery_id_source": "val_ids",
+        "probe_id_source": "val_ids"
+      },
+      "test_general_to_personal": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testA_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            1
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "general_test_ids"
+      },
+      "test_fixed5_to_personal": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testA_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            1
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "fixed_special_test_ids"
+      },
+      "test_fixed5_to_special": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testB_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            4,
+            5,
+            7
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "fixed_special_test_ids"
+      },
+      "test_fixed5_c4c5_normal": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testB_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            4,
+            5
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "fixed_special_test_ids"
+      },
+      "test_fixed5_c7": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testB_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            7
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "fixed_special_test_ids"
+      },
+      "test_all_personal": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testA_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            1
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "mixed_test_ids"
+      },
+      "test_query_micro_overall": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testA_probe",
+          "testB_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            1,
+            4,
+            5,
+            7
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "mixed_test_ids"
+      },
+      "test_mixed_c2_to_c3": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "mixed_test_ids"
+      },
+      "test_mixed_c3_to_c2": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            2
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "gallery_id_source": "mixed_test_ids",
+        "probe_id_source": "mixed_test_ids"
+      },
+      "diagnostic_fixed5_only_to_special": {
+        "gallery_splits": [
+          "val_gallery",
+          "val_probe",
+          "gallery"
+        ],
+        "gallery_filters": {
+          "clothes_ids": [
+            2,
+            3
+          ],
+          "condition_tags": [
+            "normal"
+          ]
+        },
+        "probe_splits": [
+          "testB_probe"
+        ],
+        "probe_filters": {
+          "clothes_ids": [
+            4,
+            5,
+            7
+          ]
+        },
+        "gallery_id_source": "fixed_special_test_ids",
+        "probe_id_source": "fixed_special_test_ids"
+      }
+    },
+    "task_macro_aggregates": {
+      "test_three_task_macro": [
+        "test_general_to_personal",
+        "test_fixed5_to_personal",
+        "test_fixed5_to_special"
+      ]
+    }
+  },
+  "wandb": {
+    "enabled": false,
+    "project": "mph-gait-pc-v1",
+    "entity": null,
+    "mode": "disabled",
+    "name": null,
+    "tags": [
+      "fixed-special5",
+      "pointcloud",
+      "pc-v1"
+    ]
+  },
+  "run_dir": "<FORMAL_RESULT_CELL>",
+  "protocol_runtime": {
+    "enabled": true,
+    "name": "fixed_special5_subject_holdout_5split_v1",
+    "version": "fixed_special5_subject_holdout_5split_v1_20260724",
+    "num_splits": 5,
+    "split_index": 0,
+    "fold_index": 0,
+    "general_test_group_index": 0,
+    "val_group_index": 1,
+    "all_ids": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29
+    ],
+    "development_ids": [
+      1,
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      27,
+      28,
+      29
+    ],
+    "fixed_special_test_ids": [
+      3,
+      7,
+      18,
+      19,
+      26
+    ],
+    "train_ids": [
+      2,
+      4,
+      6,
+      8,
+      10,
+      13,
+      14,
+      15,
+      16,
+      23,
+      24,
+      27,
+      28,
+      29
+    ],
+    "val_ids": [
+      12,
+      17,
+      21,
+      22,
+      25
+    ],
+    "general_test_ids": [
+      1,
+      5,
+      9,
+      11,
+      20
+    ],
+    "mixed_test_ids": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      18,
+      19,
+      20,
+      26
+    ],
+    "development_groups": [
+      [
+        1,
+        5,
+        9,
+        11,
+        20
+      ],
+      [
+        12,
+        17,
+        21,
+        22,
+        25
+      ],
+      [
+        2,
+        10,
+        14,
+        24,
+        27
+      ],
+      [
+        4,
+        8,
+        13,
+        16,
+        23
+      ],
+      [
+        6,
+        15,
+        28,
+        29
+      ]
+    ],
+    "selection_uses_fixed_special": false,
+    "overlaps": {
+      "train_val": [],
+      "train_general_test": [],
+      "train_fixed_special": [],
+      "val_general_test": [],
+      "val_fixed_special": []
+    }
+  }
+}

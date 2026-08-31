@@ -1,0 +1,89 @@
+{
+  "release_method": "official_code_lidargaitpp",
+  "randomness": {
+    "training_seed": 2,
+    "evaluation_seed": 0,
+    "opengait_seed_environment": "OPENGAIT_SEED_OFFSET"
+  },
+  "official_repository": "https://github.com/ShiqiYu/OpenGait.git",
+  "official_release_checkout": "<RELEASE_ROOT>/lidargaitpp/third_party/OpenGait",
+  "official_commit": "f754f6f3831e9f83bb28f4e2f63dd43d8bcf9dc4",
+  "official_model_sha256": "180cdb41da76cdd8950159469e72c525b4e555d1060edc89f3ee887f96aae748",
+  "official_utils_sha256": "15ff5ff8f904f5b13d35d5d86f35d36814202769aed2bb0c12434acf43b881f8",
+  "release_protocol_config": "<RELEASE_ROOT>/shared/configs/fixed_special5_pointcloud_len15.yaml",
+  "release_protocol_config_sha256": "6ac32af382a2bce111e4859a0d12b9c36355014fbee4f724b26fbef7742489f6",
+  "release_adapter": "<RELEASE_ROOT>/lidargaitpp/code/lidargaitpp_adapter/build_dataset.py",
+  "release_adapter_sha256": "5b90bf8fdb996dcb488ff0fc39cdf76803edb92456bda6b41e27f247649e0c71",
+  "historical_adapter_sha256": "3234d316598c8ae2bfea9da5f091cd814760f4012984a45e02fcaa0ce30a1775",
+  "coordinate_adapter": {
+    "adapter": "kinect_xyz_mm_to_lidar_forward_lateral_height_m_v1",
+    "input_axes": [
+      "camera_x_horizontal",
+      "camera_y_vertical_down",
+      "camera_z_forward"
+    ],
+    "input_unit": "millimeter",
+    "output_axes": [
+      "forward",
+      "lateral",
+      "height_up"
+    ],
+    "output_unit": "meter",
+    "mapping": "[forward, lateral, height_up] = [Z, X, -Y] * unit_scale",
+    "unit_scale": 0.001,
+    "frames": 50785,
+    "empty_frames": 0,
+    "points": 541093623,
+    "raw_axis_min": [
+      -1059.0,
+      -1284.0,
+      544.0
+    ],
+    "raw_axis_max": [
+      997.0,
+      1023.0,
+      7924.0
+    ],
+    "output_axis_min": [
+      0.5440000295639038,
+      -1.059000015258789,
+      -1.0230000019073486
+    ],
+    "output_axis_max": [
+      7.924000263214111,
+      0.9970000386238098,
+      1.284000039100647
+    ],
+    "ground_relative_height_span_m": {
+      "min": 0.9770000576972961,
+      "mean": 1.6595708569626386,
+      "max": 2.0380001068115234
+    },
+    "ground_relative_height_over_2m_fraction": 5.5443270304444154e-09,
+    "official_hap_height_range_m": [
+      0.0,
+      2.0
+    ]
+  },
+  "recipe": {
+    "model": "LidarGaitPlusPlus",
+    "transform": "PointCloudsTransform(scale_aware=True)",
+    "sampler": "TripletSampler(P=4, K=2)",
+    "loss": "TripletLoss(weight=1.0)+CrossEntropyLoss(weight=0.1)",
+    "optimizer": "SGD(lr=0.1, momentum=0.9, weight_decay=0.0005)",
+    "total_iter": 10000,
+    "save_iter": 1000,
+    "adaptations": [
+      "Azure Kinect [X,Y,Z] millimeters mapped to [Z,X,-Y] meters",
+      "official height-aware channel now receives vertical height in meters",
+      "Fixed-Special5 subject split and shared retrieval evaluator",
+      "validation-C1-only checkpoint selection",
+      "P/K batch reduced for single-GPU memory",
+      "training iterations reduced from official 40000 to 10000 by default",
+      "evaluation sequences uniformly fixed to protocol clip_len",
+      "evaluation points deterministically fixed before OpenGait collation",
+      "deterministic farthest-point sampling during evaluation only"
+    ]
+  },
+  "note": "The official model commit and hashes are unchanged. Public paths were normalized without changing reported metrics."
+}

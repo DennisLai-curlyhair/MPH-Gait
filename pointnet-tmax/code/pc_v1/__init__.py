@@ -1,0 +1,1 @@
+"""PointNet-TMax model implementation."""

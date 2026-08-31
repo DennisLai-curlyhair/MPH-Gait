@@ -1,0 +1,136 @@
+{
+  "description": "Exact production routing visualization before learned token pooling",
+  "source": "dataset/local/pointcloud/PersonRecognitionWalking_29/person_003/P3_C4_V001/clear_data_060.npy",
+  "source_sha256": "dabca1484c0b77bf7f4ef708526ecc271a0d0c607d44cfab01c6faa6513c46d4",
+  "source_valid_points": 5686,
+  "coordinate_adapter": "kinect_xyz_mm_to_forward_lateral_height_m_v1",
+  "coordinate_order": [
+    "forward",
+    "lateral",
+    "height_up"
+  ],
+  "sampling": "evaluation deterministic linspace/round",
+  "sampled_points": 1024,
+  "sampled_index_first_last": [
+    0,
+    5685
+  ],
+  "sample_center_m": [
+    4.831705570220947,
+    -0.39740055799484253,
+    0.20135438442230225
+  ],
+  "centered_min_m": [
+    -0.1757054328918457,
+    -0.27059948444366455,
+    -0.9593544006347656
+  ],
+  "centered_max_m": [
+    0.2402944564819336,
+    0.25940054655075073,
+    0.8256456851959229
+  ],
+  "routing_min": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "routing_max": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "fine": {
+    "grid": [
+      2,
+      2,
+      4
+    ],
+    "num_windows": 16,
+    "window_labels": [
+      "F0-L0-H0",
+      "F0-L0-H1",
+      "F0-L0-H2",
+      "F0-L0-H3",
+      "F0-L1-H0",
+      "F0-L1-H1",
+      "F0-L1-H2",
+      "F0-L1-H3",
+      "F1-L0-H0",
+      "F1-L0-H1",
+      "F1-L0-H2",
+      "F1-L0-H3",
+      "F1-L1-H0",
+      "F1-L1-H1",
+      "F1-L1-H2",
+      "F1-L1-H3"
+    ],
+    "point_counts": [
+      65,
+      106,
+      137,
+      86,
+      0,
+      28,
+      181,
+      132,
+      37,
+      7,
+      61,
+      0,
+      65,
+      90,
+      29,
+      0
+    ],
+    "valid_windows_min_2_points": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      false
+    ],
+    "output_png": "docs/figures/tokenizer_real_frame/tokenizer_fine16_real_frame.png",
+    "output_svg": "docs/figures/tokenizer_real_frame/tokenizer_fine16_real_frame.svg"
+  },
+  "coarse": {
+    "grid": [
+      1,
+      2,
+      2
+    ],
+    "num_windows": 4,
+    "window_labels": [
+      "F0-L0-H0",
+      "F0-L0-H1",
+      "F0-L1-H0",
+      "F0-L1-H1"
+    ],
+    "point_counts": [
+      215,
+      284,
+      183,
+      342
+    ],
+    "valid_windows_min_2_points": [
+      true,
+      true,
+      true,
+      true
+    ],
+    "output_png": "docs/figures/tokenizer_real_frame/tokenizer_coarse4_real_frame.png",
+    "output_svg": "docs/figures/tokenizer_real_frame/tokenizer_coarse4_real_frame.svg"
+  },
+  "important_note": "The figures visualize exact window routing. Learned content scores, position penalties, point-feature pooling, and Transformer mixing occur after routing."
+}

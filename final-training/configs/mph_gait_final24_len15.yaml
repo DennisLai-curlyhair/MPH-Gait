@@ -1,0 +1,150 @@
+experiment:
+  root: ../../outputs/final-training/mph-gait
+  name: mph_gait_final24_len15
+  seed: 0
+method:
+  family: mph_gait
+  id: mph_gait
+  display_name: MPH-Gait
+  full_name: Multi-scale Point-Hierarchy Gait Network
+  role: proposed_method
+  implementation: mph_gait.model.MPHGait
+  baseline: pointnet_tmax
+protocol:
+  enabled: true
+  mode: final24_fixed_budget
+  name: final24_fixed5_eval_v1
+  version: final24_fixed5_eval_v1_20260817
+  split_index: 0
+  fixed_special_test_ids:
+  - 3
+  - 7
+  - 18
+  - 19
+  - 26
+  development_groups:
+  - [1, 5, 9, 11, 20]
+  - [12, 17, 21, 22, 25]
+  - [2, 10, 14, 24, 27]
+  - [4, 8, 13, 16, 23]
+  - [6, 15, 28, 29]
+data:
+  root: ../../dataset/local/pointcloud
+  dataset_name: PersonRecognitionWalking_29
+  modality: pointcloud
+  coordinate_adapter: kinect_xyz_mm_to_forward_lateral_height_m_v1
+  num_points: 1024
+  clip_len: 15
+  drop_first_frames: 30
+  random_point_sample_train: true
+  pad_short: true
+  train_split: train
+  batch_size: 16
+  num_workers: 4
+  train_filters:
+    clothes_ids: [2, 3]
+    condition_tags: [normal]
+    max_video_id: 16
+model:
+  name: mph_gait
+  num_classes: 29
+  in_channels: 3
+  point_channels: [64, 128, 256, 512]
+  embedding_dim: 256
+  temporal_pool: max
+  dropout: 0.0
+  point_normalization: center
+  token_dim: 64
+  fine_grid: [2, 2, 4]
+  coarse_grid: [1, 2, 2]
+  shift_axes: [false, true, true]
+  transformer_depth: 1
+  transformer_heads: 4
+  transformer_mlp_ratio: 2.0
+  attention_dropout: 0.0
+  min_points_per_window: 2
+  token_dropout: 0.0
+  residual_max_weight: 0.2
+  residual_weight_init: 0.05
+loss:
+  ce_scale: 1.0
+train:
+  epochs: 50
+  device: auto
+  amp: false
+  deterministic: true
+  cudnn_benchmark: false
+  log_interval: 20
+  save_every: 10
+  retrieval_eval_every: 0
+  checkpoint_policy: last_fixed_budget
+  grad_clip_norm: 1.0
+  nonfinite_policy: raise
+  max_nonfinite_batches: 0
+optimizer:
+  name: adamw
+  lr: 0.001
+  weight_decay: 0.01
+scheduler:
+  name: cosine
+retrieval:
+  metric: cosine
+  ranks: [1, 5]
+  normalize_embeddings: true
+  gallery_splits: &gallery_splits [val_gallery, val_probe, gallery]
+  c1_splits: &c1_splits [testA_probe]
+  c457_splits: &c457_splits [testB_probe]
+  gallery_filters: &gallery_filters
+    clothes_ids: [2, 3]
+    condition_tags: [normal]
+  c1_filters: &c1_filters
+    clothes_ids: [1]
+  c457_filters: &c457_filters
+    clothes_ids: [4, 5, 7]
+  c4_filters: &c4_filters
+    clothes_ids: [4]
+  c5_filters: &c5_filters
+    clothes_ids: [5]
+  c7_filters: &c7_filters
+    clothes_ids: [7]
+  pairs:
+    final24_fixed5_c1:
+      gallery_splits: *gallery_splits
+      gallery_filters: *gallery_filters
+      probe_splits: *c1_splits
+      probe_filters: *c1_filters
+      gallery_id_source: fixed_special_test_ids
+      probe_id_source: fixed_special_test_ids
+    final24_fixed5_c457:
+      gallery_splits: *gallery_splits
+      gallery_filters: *gallery_filters
+      probe_splits: *c457_splits
+      probe_filters: *c457_filters
+      gallery_id_source: fixed_special_test_ids
+      probe_id_source: fixed_special_test_ids
+    final24_fixed5_c4:
+      gallery_splits: *gallery_splits
+      gallery_filters: *gallery_filters
+      probe_splits: *c457_splits
+      probe_filters: *c4_filters
+      gallery_id_source: fixed_special_test_ids
+      probe_id_source: fixed_special_test_ids
+    final24_fixed5_c5:
+      gallery_splits: *gallery_splits
+      gallery_filters: *gallery_filters
+      probe_splits: *c457_splits
+      probe_filters: *c5_filters
+      gallery_id_source: fixed_special_test_ids
+      probe_id_source: fixed_special_test_ids
+    final24_fixed5_c7:
+      gallery_splits: *gallery_splits
+      gallery_filters: *gallery_filters
+      probe_splits: *c457_splits
+      probe_filters: *c7_filters
+      gallery_id_source: fixed_special_test_ids
+      probe_id_source: fixed_special_test_ids
+wandb:
+  enabled: false
+  project: mph-gait-final24
+  mode: disabled
+  tags: [final24, pointcloud, mph-gait]

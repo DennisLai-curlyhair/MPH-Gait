@@ -1,0 +1,37 @@
+method,suite,setting,completed_runs,expected_runs,complete_seeds,expected_seeds,status
+PointNet-TMax,train_clothing,len15_c2,15,15,3,3,complete
+PointNet-TMax,train_clothing,len15_c3,15,15,3,3,complete
+PointNet-TMax,train_video_count,len15_2videos_per_id,15,15,3,3,complete
+PointNet-TMax,train_video_count,len15_4videos_per_id,15,15,3,3,complete
+PointNet-TMax,train_video_count,len15_8videos_per_id,15,15,3,3,complete
+PointNet-TMax,train_video_count,len15_16videos_per_id,15,15,3,3,complete
+MPH-Gait,train_clothing,len15_c2,15,15,3,3,complete
+MPH-Gait,train_clothing,len15_c3,15,15,3,3,complete
+MPH-Gait,train_video_count,len15_2videos_per_id,15,15,3,3,complete
+MPH-Gait,train_video_count,len15_4videos_per_id,15,15,3,3,complete
+MPH-Gait,train_video_count,len15_8videos_per_id,15,15,3,3,complete
+MPH-Gait,train_video_count,len15_16videos_per_id,15,15,3,3,complete
+Official-code adapted LidarGait++,train_clothing,len15_c2,15,15,3,3,complete
+Official-code adapted LidarGait++,train_clothing,len15_c3,15,15,3,3,complete
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,15,15,3,3,complete
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,15,15,3,3,complete
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,15,15,3,3,complete
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,15,15,3,3,complete
+RGB-depth projection,train_clothing,len15_c2,15,15,3,3,complete
+RGB-depth projection,train_clothing,len15_c3,15,15,3,3,complete
+RGB-depth projection,train_video_count,len15_2videos_per_id,15,15,3,3,complete
+RGB-depth projection,train_video_count,len15_4videos_per_id,15,15,3,3,complete
+RGB-depth projection,train_video_count,len15_8videos_per_id,15,15,3,3,complete
+RGB-depth projection,train_video_count,len15_16videos_per_id,15,15,3,3,complete
+Gray-depth projection,train_clothing,len15_c2,15,15,3,3,complete
+Gray-depth projection,train_clothing,len15_c3,15,15,3,3,complete
+Gray-depth projection,train_video_count,len15_2videos_per_id,15,15,3,3,complete
+Gray-depth projection,train_video_count,len15_4videos_per_id,15,15,3,3,complete
+Gray-depth projection,train_video_count,len15_8videos_per_id,15,15,3,3,complete
+Gray-depth projection,train_video_count,len15_16videos_per_id,15,15,3,3,complete
+Silhouette projection,train_clothing,len15_c2,15,15,3,3,complete
+Silhouette projection,train_clothing,len15_c3,15,15,3,3,complete
+Silhouette projection,train_video_count,len15_2videos_per_id,15,15,3,3,complete
+Silhouette projection,train_video_count,len15_4videos_per_id,15,15,3,3,complete
+Silhouette projection,train_video_count,len15_8videos_per_id,15,15,3,3,complete
+Silhouette projection,train_video_count,len15_16videos_per_id,15,15,3,3,complete

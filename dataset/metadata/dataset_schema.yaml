@@ -1,0 +1,25 @@
+schema_version: 1
+dataset_name: PersonRecognitionWalking_29
+sensor: Azure Kinect DK
+raw_coordinate_system:
+  axes: [camera_x_horizontal, camera_y_vertical_down, camera_z_forward]
+  unit: millimeter
+pointcloud_model_coordinate_system:
+  axes: [forward, lateral, height_up]
+  mapping: "[Z, X, -Y] * 0.001"
+  unit: meter
+subject_ids: "P001-P029, subject metadata controlled separately"
+clothing_ids:
+  C1: personal probe
+  C2: controlled training/gallery
+  C3: controlled training/gallery
+  C4: special clothing
+  C5: special clothing
+  C7: special clothing
+main_training_videos: "C2/C3 V001-V016"
+main_clip_len: 15
+drop_first_frames: 30
+points_per_frame: 1024
+privacy:
+  raw_data_in_git: false
+  public_access_terms: TBD

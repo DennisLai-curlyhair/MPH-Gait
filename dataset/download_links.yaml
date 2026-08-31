@@ -1,0 +1,18 @@
+schema_version: 1
+dataset_name: PersonRecognitionWalking_29
+license_or_access_terms: TBD
+ethics_and_consent_statement_url: TBD
+archives:
+  pointcloud:
+    destination: dataset
+    url: TBD
+    sha256: TBD
+    format: TBD
+  projection:
+    destination: dataset_proj
+    url: TBD
+    sha256: TBD
+    format: TBD
+notes:
+  - Replace every TBD before a public release.
+  - Keep the Fixed-Special5 metadata in Git even if raw data require controlled access.

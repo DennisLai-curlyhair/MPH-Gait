@@ -1,0 +1,18 @@
+{
+  "release_method": "projection_silhouette",
+  "release_config": "projection/code/projection_baseline/configs/silhouette_len15.yaml",
+  "historical_run_source_hashes": {
+    "trainer": "42ae233c887004b29677ab8dbaca0e48adb4317c051429a25cede98e568da293",
+    "model": "2fd74f8c697e79ca344c3eedb6a1dfe982d6b1052b85abc4ee0d5e0e56f1470e",
+    "dataset": "067e86d3dcc7471de8b96747e430608cb2cbeb4af7ae3377d3689fda15076176",
+    "protocol": "6f4ca35b1f8a688350fa16803b4c42b32d30222155086ee0c743d9102c9e13e6",
+    "utils": "ae7338dccd0f4a29c44c6209bd075c3bc0a33674f52da06fff7637d889a4c1d1"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.10.0",
+    "cuda": "13.0"
+  },
+  "release_source_lineage": "docs/provenance/source_lineage.json",
+  "note": "Historical source hashes are retained; only public path and method labels were normalized."
+}

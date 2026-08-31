@@ -1,0 +1,1972 @@
+{
+  "method": "official_code_lidargaitpp",
+  "split_index": 1,
+  "protocol_name": "fixed_special5_subject_holdout_5split_v1",
+  "selection_uses_fixed_special": false,
+  "deterministic_evaluation_fps": true,
+  "evaluation_seed": 0,
+  "config": "<FORMAL_RUN_WORKDIR>/configs/final_eval.yaml",
+  "manifest": "<FORMAL_RESULT_CELL>/manifest.json",
+  "checkpoint": "<CHECKPOINT_ROOT>/lidargaitpp/seed_2/split_1/best.pt",
+  "pairs": [
+    "diagnostic_fixed5_only_to_special",
+    "test_all_personal",
+    "test_fixed5_c4c5_normal",
+    "test_fixed5_c7",
+    "test_fixed5_to_personal",
+    "test_fixed5_to_special",
+    "test_general_to_personal",
+    "test_mixed_c2_to_c3",
+    "test_mixed_c3_to_c2",
+    "test_query_micro_overall",
+    "val",
+    "val_c2_to_c3",
+    "val_c3_to_c2"
+  ],
+  "embedding_diagnostics": {
+    "num_embeddings": 848,
+    "embedding_dim": 7936,
+    "all_finite": true,
+    "feature_std_mean": 0.004176049493253231,
+    "sample_norm_mean": 1.0,
+    "sample_norm_std": 1.0963455565615732e-07,
+    "off_diagonal_cosine_mean": 0.8249548077583313,
+    "off_diagonal_cosine_std": 0.08237167447805405
+  },
+  "retrieval_metrics": {
+    "diagnostic_fixed5_only_to_special": {
+      "num_gallery": 40,
+      "num_probe": 427,
+      "mAP": 0.7088431372924487,
+      "skipped": false,
+      "rank1": 0.6440281030444965,
+      "rank5": 0.7704918032786885,
+      "condition": {
+        "C4_longhair": {
+          "count": 40,
+          "rank1": 0.5,
+          "mAP": 0.6381677754223347
+        },
+        "C4_normal": {
+          "count": 106,
+          "rank1": 0.8113207547169812,
+          "mAP": 0.8278630806027718
+        },
+        "C5_longhair": {
+          "count": 40,
+          "rank1": 0.5,
+          "mAP": 0.621910571679473
+        },
+        "C5_normal": {
+          "count": 101,
+          "rank1": 0.6336633663366337,
+          "mAP": 0.7152896252008948
+        },
+        "C7_2": {
+          "count": 40,
+          "rank1": 0.975,
+          "mAP": 0.9171991311013699
+        },
+        "C7_normal": {
+          "count": 100,
+          "rank1": 0.46,
+          "mAP": 0.5558718180656433
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 40,
+          "num_probe": 100,
+          "mAP": 0.9488993060588836,
+          "skipped": false,
+          "rank1": 0.99,
+          "rank5": 1.0,
+          "condition": {
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.8317055374383926
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9993055552244187
+            },
+            "C7_2": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9969065666198731
+            },
+            "C7_normal": {
+              "count": 40,
+              "rank1": 0.975,
+              "mAP": 0.958289435505867
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 40,
+          "num_probe": 81,
+          "mAP": 0.8332079391420624,
+          "skipped": false,
+          "rank1": 0.8271604938271605,
+          "rank5": 1.0,
+          "condition": {
+            "C4_normal": {
+              "count": 21,
+              "rank1": 1.0,
+              "mAP": 0.9988095249448504
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9945684522390366
+            },
+            "C7_2": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.8374916955828666
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.35,
+              "mAP": 0.49368200451135635
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 40,
+          "num_probe": 106,
+          "mAP": 0.30789481159651055,
+          "skipped": false,
+          "rank1": 0.05660377358490566,
+          "rank5": 0.36792452830188677,
+          "condition": {
+            "C4_longhair": {
+              "count": 20,
+              "rank1": 0.05,
+              "mAP": 0.3409656062722206
+            },
+            "C4_normal": {
+              "count": 25,
+              "rank1": 0.2,
+              "mAP": 0.446419495344162
+            },
+            "C5_longhair": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.24382114335894584
+            },
+            "C5_normal": {
+              "count": 21,
+              "rank1": 0.0,
+              "mAP": 0.23623171022960118
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.2409880869090557
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 40,
+          "num_probe": 80,
+          "mAP": 0.9711410909891128,
+          "skipped": false,
+          "rank1": 0.9875,
+          "rank5": 0.9875,
+          "condition": {
+            "C4_longhair": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.9353699445724487
+            },
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9491944193840027
+            },
+            "C5_longhair": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 40,
+          "num_probe": 60,
+          "mAP": 0.49946847731868427,
+          "skipped": false,
+          "rank1": 0.4,
+          "rank5": 0.5,
+          "condition": {
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 0.2,
+              "mAP": 0.3702953040599823
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.12811012789607049
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 0.6522528534824132,
+        "rank5": 0.7710849056603774,
+        "mAP": 0.7121223250210508
+      }
+    },
+    "test_all_personal": {
+      "num_gallery": 80,
+      "num_probe": 201,
+      "mAP": 0.9921964525583371,
+      "skipped": false,
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "condition": {
+        "C1_normal": {
+          "count": 201,
+          "rank1": 1.0,
+          "mAP": 0.9921964525583371
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9897289872169495,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9897289872169495
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 80,
+          "num_probe": 21,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 21,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P012": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P017": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9969065666198731,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9969065666198731
+            }
+          }
+        },
+        "P021": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P022": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9481917560100556,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9481917560100556
+            }
+          }
+        },
+        "P025": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9867470383644104,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9867470383644104
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 10,
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "mAP": 0.9921574348211288
+      }
+    },
+    "test_fixed5_c4c5_normal": {
+      "num_gallery": 80,
+      "num_probe": 207,
+      "mAP": 0.7414660734542902,
+      "skipped": false,
+      "rank1": 0.714975845410628,
+      "rank5": 0.8357487922705314,
+      "condition": {
+        "C4_normal": {
+          "count": 106,
+          "rank1": 0.8018867924528302,
+          "mAP": 0.7872133984599473
+        },
+        "C5_normal": {
+          "count": 101,
+          "rank1": 0.6237623762376238,
+          "mAP": 0.6934540293889471
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 80,
+          "num_probe": 40,
+          "mAP": 0.8540870681405067,
+          "skipped": false,
+          "rank1": 0.975,
+          "rank5": 1.0,
+          "condition": {
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.7782286822795867
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.9299454540014267
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 80,
+          "num_probe": 41,
+          "mAP": 0.9942557113926586,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C4_normal": {
+              "count": 21,
+              "rank1": 1.0,
+              "mAP": 0.9974867729913621
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9908630967140197
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 80,
+          "num_probe": 46,
+          "mAP": 0.31797996098580567,
+          "skipped": false,
+          "rank1": 0.10869565217391304,
+          "rank5": 0.4782608695652174,
+          "condition": {
+            "C4_normal": {
+              "count": 25,
+              "rank1": 0.2,
+              "mAP": 0.40959531247615816
+            },
+            "C5_normal": {
+              "count": 21,
+              "rank1": 0.0,
+              "mAP": 0.2089140663544337
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 80,
+          "num_probe": 40,
+          "mAP": 0.9173235386610031,
+          "skipped": false,
+          "rank1": 0.975,
+          "rank5": 1.0,
+          "condition": {
+            "C4_normal": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.8346470773220063
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 80,
+          "num_probe": 40,
+          "mAP": 0.6808872640132904,
+          "skipped": false,
+          "rank1": 0.6,
+          "rank5": 0.75,
+          "condition": {
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 0.2,
+              "mAP": 0.36177452802658083
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 0.7317391304347827,
+        "rank5": 0.8456521739130434,
+        "mAP": 0.7529067086386529
+      }
+    },
+    "test_fixed5_c7": {
+      "num_gallery": 80,
+      "num_probe": 140,
+      "mAP": 0.6020727101713419,
+      "skipped": false,
+      "rank1": 0.6071428571428571,
+      "rank5": 0.7142857142857143,
+      "condition": {
+        "C7_2": {
+          "count": 40,
+          "rank1": 0.975,
+          "mAP": 0.9111366100609303
+        },
+        "C7_normal": {
+          "count": 100,
+          "rank1": 0.46,
+          "mAP": 0.47844715021550654
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 80,
+          "num_probe": 60,
+          "mAP": 0.8691133856773376,
+          "skipped": false,
+          "rank1": 0.9833333333333333,
+          "rank5": 1.0,
+          "condition": {
+            "C7_2": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9871446639299393
+            },
+            "C7_normal": {
+              "count": 40,
+              "rank1": 0.975,
+              "mAP": 0.8100977465510368
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 80,
+          "num_probe": 40,
+          "mAP": 0.6558427169919014,
+          "skipped": false,
+          "rank1": 0.65,
+          "rank5": 1.0,
+          "condition": {
+            "C7_2": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.8351285561919213
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.35,
+              "mAP": 0.47655687779188155
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.21664541214704514,
+          "skipped": false,
+          "rank1": 0.0,
+          "rank5": 0.0,
+          "condition": {
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.21664541214704514
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.0788379680365324,
+          "skipped": false,
+          "rank1": 0.0,
+          "rank5": 0.0,
+          "condition": {
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.0788379680365324
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 4,
+        "rank1": 0.4083333333333333,
+        "rank5": 0.5,
+        "mAP": 0.45510987071320413
+      }
+    },
+    "test_fixed5_to_personal": {
+      "num_gallery": 80,
+      "num_probe": 101,
+      "mAP": 0.9973535750171926,
+      "skipped": false,
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "condition": {
+        "C1_normal": {
+          "count": 101,
+          "rank1": 1.0,
+          "mAP": 0.9973535750171926
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9897289872169495,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9897289872169495
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 80,
+          "num_probe": 21,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 21,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9969065666198731,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9969065666198731
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "mAP": 0.9973271107673645
+      }
+    },
+    "test_fixed5_to_special": {
+      "num_gallery": 80,
+      "num_probe": 427,
+      "mAP": 0.6642727008050163,
+      "skipped": false,
+      "rank1": 0.6370023419203747,
+      "rank5": 0.7704918032786885,
+      "condition": {
+        "C4_longhair": {
+          "count": 40,
+          "rank1": 0.475,
+          "mAP": 0.5369365327060223
+        },
+        "C4_normal": {
+          "count": 106,
+          "rank1": 0.8018867924528302,
+          "mAP": 0.7872133984599473
+        },
+        "C5_longhair": {
+          "count": 40,
+          "rank1": 0.5,
+          "mAP": 0.6098331326618791
+        },
+        "C5_normal": {
+          "count": 101,
+          "rank1": 0.6237623762376238,
+          "mAP": 0.6934540293889471
+        },
+        "C7_2": {
+          "count": 40,
+          "rank1": 0.975,
+          "mAP": 0.9111366100609303
+        },
+        "C7_normal": {
+          "count": 100,
+          "rank1": 0.46,
+          "mAP": 0.47844715021550654
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 80,
+          "num_probe": 100,
+          "mAP": 0.8631028586626053,
+          "skipped": false,
+          "rank1": 0.98,
+          "rank5": 1.0,
+          "condition": {
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.7782286822795867
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.9299454540014267
+            },
+            "C7_2": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9871446639299393
+            },
+            "C7_normal": {
+              "count": 40,
+              "rank1": 0.975,
+              "mAP": 0.8100977465510368
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 80,
+          "num_probe": 81,
+          "mAP": 0.8271381832935192,
+          "skipped": false,
+          "rank1": 0.8271604938271605,
+          "rank5": 1.0,
+          "condition": {
+            "C4_normal": {
+              "count": 21,
+              "rank1": 1.0,
+              "mAP": 0.9974867729913621
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9908630967140197
+            },
+            "C7_2": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.8351285561919213
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.35,
+              "mAP": 0.47655687779188155
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 80,
+          "num_probe": 106,
+          "mAP": 0.2737308939532289,
+          "skipped": false,
+          "rank1": 0.05660377358490566,
+          "rank5": 0.36792452830188677,
+          "condition": {
+            "C4_longhair": {
+              "count": 20,
+              "rank1": 0.05,
+              "mAP": 0.28310815021395686
+            },
+            "C4_normal": {
+              "count": 25,
+              "rank1": 0.2,
+              "mAP": 0.40959531247615816
+            },
+            "C5_longhair": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.21966626532375813
+            },
+            "C5_normal": {
+              "count": 21,
+              "rank1": 0.0,
+              "mAP": 0.2089140663544337
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.21664541214704514
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 80,
+          "num_probe": 80,
+          "mAP": 0.9063529981300235,
+          "skipped": false,
+          "rank1": 0.9625,
+          "rank5": 0.9875,
+          "condition": {
+            "C4_longhair": {
+              "count": 20,
+              "rank1": 0.9,
+              "mAP": 0.7907649151980877
+            },
+            "C4_normal": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.8346470773220063
+            },
+            "C5_longhair": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 80,
+          "num_probe": 60,
+          "mAP": 0.48020416535437105,
+          "skipped": false,
+          "rank1": 0.4,
+          "rank5": 0.5,
+          "condition": {
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 0.2,
+              "mAP": 0.36177452802658083
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.0788379680365324
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 0.6452528534824132,
+        "rank5": 0.7710849056603774,
+        "mAP": 0.6701058198787496
+      }
+    },
+    "test_general_to_personal": {
+      "num_gallery": 80,
+      "num_probe": 100,
+      "mAP": 0.9869877588748932,
+      "skipped": false,
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "condition": {
+        "C1_normal": {
+          "count": 100,
+          "rank1": 1.0,
+          "mAP": 0.9869877588748932
+        }
+      },
+      "subject": {
+        "P012": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P017": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P021": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P022": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9481917560100556,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9481917560100556
+            }
+          }
+        },
+        "P025": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9867470383644104,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9867470383644104
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "mAP": 0.9869877588748931
+      }
+    },
+    "test_mixed_c2_to_c3": {
+      "num_gallery": 40,
+      "num_probe": 40,
+      "mAP": 0.9871428549289704,
+      "skipped": false,
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "condition": {
+        "C3_normal": {
+          "count": 40,
+          "rank1": 1.0,
+          "mAP": 0.9871428549289704
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 0.8964285552501678,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 0.8964285552501678
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P012": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P017": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P021": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P022": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 0.9749999940395355,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 0.9749999940395355
+            }
+          }
+        },
+        "P025": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 10,
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "mAP": 0.9871428549289704
+      }
+    },
+    "test_mixed_c3_to_c2": {
+      "num_gallery": 40,
+      "num_probe": 40,
+      "mAP": 0.9751785717904567,
+      "skipped": false,
+      "rank1": 0.975,
+      "rank5": 1.0,
+      "condition": {
+        "C2_normal": {
+          "count": 40,
+          "rank1": 0.975,
+          "mAP": 0.9751785717904567
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 0.7517857179045677,
+          "skipped": false,
+          "rank1": 0.75,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 0.75,
+              "mAP": 0.7517857179045677
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P012": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P017": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P021": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P022": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P025": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 40,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 10,
+        "rank1": 0.975,
+        "rank5": 1.0,
+        "mAP": 0.9751785717904567
+      }
+    },
+    "test_query_micro_overall": {
+      "num_gallery": 80,
+      "num_probe": 628,
+      "mAP": 0.769229188229248,
+      "skipped": false,
+      "rank1": 0.7531847133757962,
+      "rank5": 0.8439490445859873,
+      "condition": {
+        "C1_normal": {
+          "count": 201,
+          "rank1": 1.0,
+          "mAP": 0.9921964525583371
+        },
+        "C4_longhair": {
+          "count": 40,
+          "rank1": 0.475,
+          "mAP": 0.5369365327060223
+        },
+        "C4_normal": {
+          "count": 106,
+          "rank1": 0.8018867924528302,
+          "mAP": 0.7872133984599473
+        },
+        "C5_longhair": {
+          "count": 40,
+          "rank1": 0.5,
+          "mAP": 0.6098331326618791
+        },
+        "C5_normal": {
+          "count": 101,
+          "rank1": 0.6237623762376238,
+          "mAP": 0.6934540293889471
+        },
+        "C7_2": {
+          "count": 40,
+          "rank1": 0.975,
+          "mAP": 0.9111366100609303
+        },
+        "C7_normal": {
+          "count": 100,
+          "rank1": 0.46,
+          "mAP": 0.47844715021550654
+        }
+      },
+      "subject": {
+        "P003": {
+          "num_gallery": 80,
+          "num_probe": 120,
+          "mAP": 0.8842072134216626,
+          "skipped": false,
+          "rank1": 0.9833333333333333,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9897289872169495
+            },
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.7782286822795867
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.9299454540014267
+            },
+            "C7_2": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9871446639299393
+            },
+            "C7_normal": {
+              "count": 40,
+              "rank1": 0.975,
+              "mAP": 0.8100977465510368
+            }
+          }
+        },
+        "P007": {
+          "num_gallery": 80,
+          "num_probe": 102,
+          "mAP": 0.8627273808507359,
+          "skipped": false,
+          "rank1": 0.8627450980392157,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 21,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C4_normal": {
+              "count": 21,
+              "rank1": 1.0,
+              "mAP": 0.9974867729913621
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9908630967140197
+            },
+            "C7_2": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.8351285561919213
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.35,
+              "mAP": 0.47655687779188155
+            }
+          }
+        },
+        "P012": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P017": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P018": {
+          "num_gallery": 80,
+          "num_probe": 126,
+          "mAP": 0.38901170443684335,
+          "skipped": false,
+          "rank1": 0.20634920634920634,
+          "rank5": 0.46825396825396826,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C4_longhair": {
+              "count": 20,
+              "rank1": 0.05,
+              "mAP": 0.28310815021395686
+            },
+            "C4_normal": {
+              "count": 25,
+              "rank1": 0.2,
+              "mAP": 0.40959531247615816
+            },
+            "C5_longhair": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.21966626532375813
+            },
+            "C5_normal": {
+              "count": 21,
+              "rank1": 0.0,
+              "mAP": 0.2089140663544337
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.21664541214704514
+            }
+          }
+        },
+        "P019": {
+          "num_gallery": 80,
+          "num_probe": 100,
+          "mAP": 0.9244637118279934,
+          "skipped": false,
+          "rank1": 0.97,
+          "rank5": 0.99,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9969065666198731
+            },
+            "C4_longhair": {
+              "count": 20,
+              "rank1": 0.9,
+              "mAP": 0.7907649151980877
+            },
+            "C4_normal": {
+              "count": 20,
+              "rank1": 0.95,
+              "mAP": 0.8346470773220063
+            },
+            "C5_longhair": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P021": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P022": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9481917560100556,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9481917560100556
+            }
+          }
+        },
+        "P025": {
+          "num_gallery": 80,
+          "num_probe": 20,
+          "mAP": 0.9867470383644104,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 0.9867470383644104
+            }
+          }
+        },
+        "P026": {
+          "num_gallery": 80,
+          "num_probe": 80,
+          "mAP": 0.6101531240157783,
+          "skipped": false,
+          "rank1": 0.55,
+          "rank5": 0.625,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C4_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            },
+            "C5_normal": {
+              "count": 20,
+              "rank1": 0.2,
+              "mAP": 0.36177452802658083
+            },
+            "C7_normal": {
+              "count": 20,
+              "rank1": 0.0,
+              "mAP": 0.0788379680365324
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 10,
+        "rank1": 0.8572427637721756,
+        "rank5": 0.9083253968253968,
+        "mAP": 0.8605501928927479
+      }
+    },
+    "val": {
+      "num_gallery": 40,
+      "num_probe": 100,
+      "mAP": 1.0,
+      "skipped": false,
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "condition": {
+        "C1_normal": {
+          "count": 100,
+          "rank1": 1.0,
+          "mAP": 1.0
+        }
+      },
+      "subject": {
+        "P002": {
+          "num_gallery": 40,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P010": {
+          "num_gallery": 40,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P014": {
+          "num_gallery": 40,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P024": {
+          "num_gallery": 40,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P027": {
+          "num_gallery": 40,
+          "num_probe": 20,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C1_normal": {
+              "count": 20,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "mAP": 1.0
+      }
+    },
+    "val_c2_to_c3": {
+      "num_gallery": 20,
+      "num_probe": 20,
+      "mAP": 1.0,
+      "skipped": false,
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "condition": {
+        "C3_normal": {
+          "count": 20,
+          "rank1": 1.0,
+          "mAP": 1.0
+        }
+      },
+      "subject": {
+        "P002": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P010": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P014": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P024": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P027": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C3_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "mAP": 1.0
+      }
+    },
+    "val_c3_to_c2": {
+      "num_gallery": 20,
+      "num_probe": 20,
+      "mAP": 1.0,
+      "skipped": false,
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "condition": {
+        "C2_normal": {
+          "count": 20,
+          "rank1": 1.0,
+          "mAP": 1.0
+        }
+      },
+      "subject": {
+        "P002": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P010": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P014": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P024": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        },
+        "P027": {
+          "num_gallery": 20,
+          "num_probe": 4,
+          "mAP": 1.0,
+          "skipped": false,
+          "rank1": 1.0,
+          "rank5": 1.0,
+          "condition": {
+            "C2_normal": {
+              "count": 4,
+              "rank1": 1.0,
+              "mAP": 1.0
+            }
+          }
+        }
+      },
+      "subject_macro": {
+        "num_subjects": 5,
+        "rank1": 1.0,
+        "rank5": 1.0,
+        "mAP": 1.0
+      }
+    }
+  }
+}

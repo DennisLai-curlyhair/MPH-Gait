@@ -1,0 +1,253 @@
+method,suite,setting,pair,aggregation,metric,mean_of_seed_split_means,seed_std,pooled_split_std,num_seeds,num_runs
+PointNet-TMax,train_clothing,len15_c2,test_general_to_personal,query_micro,mAP,0.7624385770890448,0.0137083138230672,0.07812232524862697,3,15
+PointNet-TMax,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank1,0.6117096018735363,0.07357358204062267,0.1457851233180403,3,15
+PointNet-TMax,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank5,0.8277907884465261,0.05703953153489054,0.0981368654735763,3,15
+PointNet-TMax,train_clothing,len15_c2,test_fixed5_to_special,query_micro,mAP,0.5613985117091554,0.03888229615949755,0.0982495907665312,3,15
+PointNet-TMax,train_clothing,len15_c2,test_fixed5_to_special,subject_macro,mAP,0.5396369639822404,0.035774010634343274,0.09397961608609297,3,15
+PointNet-TMax,train_clothing,len15_c2,test_fixed5_c4c5_normal,subject_macro,mAP,0.541326113380422,0.03979235422235918,0.11103232677696213,3,15
+PointNet-TMax,train_clothing,len15_c2,test_fixed5_c7,subject_macro,mAP,0.47040028932193917,0.037816531615598316,0.08380061982289107,3,15
+PointNet-TMax,train_clothing,len15_c3,test_general_to_personal,query_micro,mAP,0.79955175004096,0.023525717180946416,0.07634218316912746,3,15
+PointNet-TMax,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank1,0.7275565964090553,0.06757548464618585,0.1350394602102652,3,15
+PointNet-TMax,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank5,0.9058548009367682,0.007533076085442524,0.046179597796908646,3,15
+PointNet-TMax,train_clothing,len15_c3,test_fixed5_to_special,query_micro,mAP,0.6531821896760469,0.05172181551879788,0.10951697049368268,3,15
+PointNet-TMax,train_clothing,len15_c3,test_fixed5_to_special,subject_macro,mAP,0.6346527295639373,0.041976092786546425,0.10564692433978495,3,15
+PointNet-TMax,train_clothing,len15_c3,test_fixed5_c4c5_normal,subject_macro,mAP,0.6276107482792354,0.04404059635508574,0.1246321129293251,3,15
+PointNet-TMax,train_clothing,len15_c3,test_fixed5_c7,subject_macro,mAP,0.5677179162400878,0.047711749284881456,0.08062397694872007,3,15
+PointNet-TMax,train_video_count,len15_2videos_per_id,test_general_to_personal,query_micro,mAP,0.22625340097855315,0.008104706544034758,0.018000330699955464,3,15
+PointNet-TMax,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank1,0.32365339578454333,0.018216869158808553,0.041729139599638636,3,15
+PointNet-TMax,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7019516003122561,0.03405452512851373,0.045975395717948585,3,15
+PointNet-TMax,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,mAP,0.21200712181272963,0.006112216962994984,0.013899346509288701,3,15
+PointNet-TMax,train_video_count,len15_2videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.2111634742526806,0.0051905583626903245,0.013585169537241315,3,15
+PointNet-TMax,train_video_count,len15_2videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.2101282164195889,0.0051588924613958816,0.012871789744284698,3,15
+PointNet-TMax,train_video_count,len15_2videos_per_id,test_fixed5_c7,subject_macro,mAP,0.23520718801766635,0.006620144601657301,0.018730118493700085,3,15
+PointNet-TMax,train_video_count,len15_4videos_per_id,test_general_to_personal,query_micro,mAP,0.357522400387922,0.02101988823831176,0.031060923463520906,3,15
+PointNet-TMax,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6107728337236534,0.011892406021884183,0.07010235252056325,3,15
+PointNet-TMax,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank5,0.8797814207650273,0.016636245127209973,0.042255639665025324,3,15
+PointNet-TMax,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,mAP,0.3232772970750963,0.00699425852076301,0.029167586527344646,3,15
+PointNet-TMax,train_video_count,len15_4videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.3099433625600852,0.0031804034067895084,0.027389303993344015,3,15
+PointNet-TMax,train_video_count,len15_4videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.30679269053906294,0.0035546142006057206,0.029769113013936168,3,15
+PointNet-TMax,train_video_count,len15_4videos_per_id,test_fixed5_c7,subject_macro,mAP,0.3326875001533578,0.00673038823785707,0.03589348401816547,3,15
+PointNet-TMax,train_video_count,len15_8videos_per_id,test_general_to_personal,query_micro,mAP,0.5613935109802028,0.0490531718747604,0.06276458782160729,3,15
+PointNet-TMax,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6434035909445744,0.021870187258834026,0.11977411068970155,3,15
+PointNet-TMax,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank5,0.8841530054644808,0.00320728159003495,0.03954880353672183,3,15
+PointNet-TMax,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,mAP,0.45446078803369905,0.061633092590181286,0.1089359990803979,3,15
+PointNet-TMax,train_video_count,len15_8videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.4383565623101691,0.05852673889850519,0.10305891619192172,3,15
+PointNet-TMax,train_video_count,len15_8videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.4394673751383446,0.06554270326143269,0.1139038218563223,3,15
+PointNet-TMax,train_video_count,len15_8videos_per_id,test_fixed5_c7,subject_macro,mAP,0.41901132592620954,0.024909359176675732,0.05789181368754708,3,15
+PointNet-TMax,train_video_count,len15_16videos_per_id,test_general_to_personal,query_micro,mAP,0.823254437619175,0.025345957511754783,0.06636066998241627,3,15
+PointNet-TMax,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank1,0.7158469945355191,0.0339577557043867,0.09246154203689241,3,15
+PointNet-TMax,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank5,0.892271662763466,0.009305020718658153,0.03137357601935588,3,15
+PointNet-TMax,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,mAP,0.6579691750662667,0.04021796454642081,0.08680179660649388,3,15
+PointNet-TMax,train_video_count,len15_16videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6344474073160442,0.030814414682360628,0.08093953611016426,3,15
+PointNet-TMax,train_video_count,len15_16videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6415161858888013,0.029831755633383573,0.09411662790130339,3,15
+PointNet-TMax,train_video_count,len15_16videos_per_id,test_fixed5_c7,subject_macro,mAP,0.5465521034805311,0.03349838833924808,0.06945627115345757,3,15
+MPH-Gait,train_clothing,len15_c2,test_general_to_personal,query_micro,mAP,0.7618283530416248,0.05357563533670343,0.11491506209398744,3,15
+MPH-Gait,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank1,0.5978142076502732,0.06556298933713284,0.1469175499640612,3,15
+MPH-Gait,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank5,0.8427790788446526,0.019917187955115646,0.04682175087644419,3,15
+MPH-Gait,train_clothing,len15_c2,test_fixed5_to_special,query_micro,mAP,0.5575155767796097,0.04455047545495762,0.10227964687958212,3,15
+MPH-Gait,train_clothing,len15_c2,test_fixed5_to_special,subject_macro,mAP,0.5335874780828175,0.040686560518745994,0.09493709959163577,3,15
+MPH-Gait,train_clothing,len15_c2,test_fixed5_c4c5_normal,subject_macro,mAP,0.5320407810682722,0.03658117091256572,0.09251450368355059,3,15
+MPH-Gait,train_clothing,len15_c2,test_fixed5_c7,subject_macro,mAP,0.4643707347795781,0.04504966249556908,0.10105083053329782,3,15
+MPH-Gait,train_clothing,len15_c3,test_general_to_personal,query_micro,mAP,0.7861952913281282,0.008059460080071752,0.055623322349178224,3,15
+MPH-Gait,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank1,0.6838407494145199,0.07717684802474978,0.12328381359334596,3,15
+MPH-Gait,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank5,0.8885245901639345,0.03822618617137276,0.05859358101531671,3,15
+MPH-Gait,train_clothing,len15_c3,test_fixed5_to_special,query_micro,mAP,0.6178734627374208,0.05046801972628461,0.08065966732197764,3,15
+MPH-Gait,train_clothing,len15_c3,test_fixed5_to_special,subject_macro,mAP,0.6042271513226162,0.049673959801479706,0.08178590847406671,3,15
+MPH-Gait,train_clothing,len15_c3,test_fixed5_c4c5_normal,subject_macro,mAP,0.5980390053468965,0.05553368085441228,0.10506989056461195,3,15
+MPH-Gait,train_clothing,len15_c3,test_fixed5_c7,subject_macro,mAP,0.531689197535937,0.05391413093909885,0.07488727961301406,3,15
+MPH-Gait,train_video_count,len15_2videos_per_id,test_general_to_personal,query_micro,mAP,0.22962341824152013,0.009611925125953645,0.020567873398581425,3,15
+MPH-Gait,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank1,0.3389539422326307,0.021177084678276028,0.05445131349249486,3,15
+MPH-Gait,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7080405932864949,0.027392349413537492,0.03541044184814324,3,15
+MPH-Gait,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,mAP,0.21807905494771276,0.010254472002683458,0.019374693070377556,3,15
+MPH-Gait,train_video_count,len15_2videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.21773413327770172,0.009586719368765475,0.019131775230549163,3,15
+MPH-Gait,train_video_count,len15_2videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.21784812641502502,0.010563056745474003,0.019360410340120576,3,15
+MPH-Gait,train_video_count,len15_2videos_per_id,test_fixed5_c7,subject_macro,mAP,0.2398926081104825,0.011536962883135028,0.025286864471684378,3,15
+MPH-Gait,train_video_count,len15_4videos_per_id,test_general_to_personal,query_micro,mAP,0.36004875743506,0.024725130564813392,0.04325502763121558,3,15
+MPH-Gait,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5820452771272443,0.0235510211675357,0.07709563299889684,3,15
+MPH-Gait,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank5,0.8619828259172522,0.012441356323582505,0.04000474084331091,3,15
+MPH-Gait,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,mAP,0.30863438560965467,0.004244210343361478,0.027936343573190307,3,15
+MPH-Gait,train_video_count,len15_4videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.29883433698948725,0.0017688318727583502,0.0262202658376118,3,15
+MPH-Gait,train_video_count,len15_4videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.29664557833411,0.0004851885476823087,0.030394479558476285,3,15
+MPH-Gait,train_video_count,len15_4videos_per_id,test_fixed5_c7,subject_macro,mAP,0.30780344669707116,0.009230789389162327,0.0350293225582916,3,15
+MPH-Gait,train_video_count,len15_8videos_per_id,test_general_to_personal,query_micro,mAP,0.5139115820356395,0.04302659752563633,0.06207105948496097,3,15
+MPH-Gait,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6271662763466042,0.023849290449416118,0.11469258655039713,3,15
+MPH-Gait,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank5,0.8741608118657299,0.018693682494420993,0.04178401335727313,3,15
+MPH-Gait,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,mAP,0.41741054764164326,0.04352079798644915,0.09651940079594114,3,15
+MPH-Gait,train_video_count,len15_8videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.40082339587939436,0.04274449835003183,0.09426638577187996,3,15
+MPH-Gait,train_video_count,len15_8videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.40171937624830717,0.04449365017331323,0.09728047251319712,3,15
+MPH-Gait,train_video_count,len15_8videos_per_id,test_fixed5_c7,subject_macro,mAP,0.38418670608972505,0.019601884597546415,0.061023856109583954,3,15
+MPH-Gait,train_video_count,len15_16videos_per_id,test_general_to_personal,query_micro,mAP,0.7823562657483945,0.018576046192811946,0.0691422530450109,3,15
+MPH-Gait,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6830601092896176,0.016100122999527545,0.11331818947323016,3,15
+MPH-Gait,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank5,0.8654176424668227,0.01455930457689277,0.05161347871149682,3,15
+MPH-Gait,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,mAP,0.6326549428815399,0.032059402513685775,0.09490695271775029,3,15
+MPH-Gait,train_video_count,len15_16videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6100446873602321,0.030727927296539306,0.09421642985745572,3,15
+MPH-Gait,train_video_count,len15_16videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6202979718014155,0.036648779989579806,0.11438625840338852,3,15
+MPH-Gait,train_video_count,len15_16videos_per_id,test_fixed5_c7,subject_macro,mAP,0.5272075136337016,0.021495729720056117,0.058882536672073424,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c2,test_general_to_personal,query_micro,mAP,0.9552943486824534,0.015379903232589039,0.05081751607215594,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank1,0.6134270101483216,0.021756203594811025,0.08102487951659168,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank5,0.7689305230288838,0.019531609684928678,0.08575252712777497,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c2,test_fixed5_to_special,query_micro,mAP,0.631451334330856,0.009301608601086931,0.04927624236205276,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c2,test_fixed5_to_special,subject_macro,mAP,0.6375482264079055,0.011155346303779666,0.04280451153288106,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c2,test_fixed5_c4c5_normal,subject_macro,mAP,0.665996652805524,0.013290644586877563,0.05955874825484403,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c2,test_fixed5_c7,subject_macro,mAP,0.512184371261133,0.012539512826300822,0.05720174211747095,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c3,test_general_to_personal,query_micro,mAP,0.9547384879532593,0.0033760863198279774,0.043440983794374485,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank1,0.6170179547228728,0.03154172536438501,0.09095928156002894,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank5,0.7960967993754879,0.039087548304184636,0.096037646570378,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c3,test_fixed5_to_special,query_micro,mAP,0.6315603766727038,0.01654085040586089,0.07107053390011783,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c3,test_fixed5_to_special,subject_macro,mAP,0.6289952885861676,0.012833037034828586,0.0688812527732746,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c3,test_fixed5_c4c5_normal,subject_macro,mAP,0.6657143745976614,0.016914931854488717,0.06689622000498366,3,15
+Official-code adapted LidarGait++,train_clothing,len15_c3,test_fixed5_c7,subject_macro,mAP,0.5274363175696797,0.02348263061075132,0.09592767032576258,3,15
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,test_general_to_personal,query_micro,mAP,0.9669580926684773,0.008389069243866119,0.04197818050931182,3,15
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5879781420765028,0.018206161225975168,0.04630821440364757,3,15
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7238095238095239,0.00994573508735861,0.07249856577050977,3,15
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,mAP,0.631788760488802,0.009146429247279092,0.029179770779140385,3,15
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6385224303531388,0.009457022362566361,0.030370044199944924,3,15
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6863785332196559,0.012333995856416344,0.03674415959690679,3,15
+Official-code adapted LidarGait++,train_video_count,len15_2videos_per_id,test_fixed5_c7,subject_macro,mAP,0.5051236123053564,0.02009358496433908,0.057363090905727644,3,15
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,test_general_to_personal,query_micro,mAP,0.970015578188343,0.009860343668653578,0.03494927072359713,3,15
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6234192037470726,0.029268071217572623,0.06638397651451786,3,15
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7590944574551132,0.05190452650289707,0.09431812744866158,3,15
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,mAP,0.6419396881557925,0.017472330698402375,0.0400277408495464,3,15
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6478282073944233,0.012895376216800229,0.041087560962084616,3,15
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6928922122149749,0.016942951340573737,0.043571377957127816,3,15
+Official-code adapted LidarGait++,train_video_count,len15_4videos_per_id,test_fixed5_c7,subject_macro,mAP,0.5157797760557797,0.014616685433200034,0.05816707096021321,3,15
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,test_general_to_personal,query_micro,mAP,0.9704603744421908,0.006395188970376764,0.0393938064332928,3,15
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6304449648711944,0.015340323321863072,0.07941470062050804,3,15
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7530054644808742,0.010607517721444526,0.09002591570119894,3,15
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,mAP,0.6596231108166388,0.0027902135341083536,0.06811852319261742,3,15
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6590345614748138,0.0024450454086226087,0.06441302921314845,3,15
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.7068640789216948,0.009625478683662498,0.06903438356931381,3,15
+Official-code adapted LidarGait++,train_video_count,len15_8videos_per_id,test_fixed5_c7,subject_macro,mAP,0.5280696260101265,0.005146752912630357,0.0722600998724995,3,15
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,test_general_to_personal,query_micro,mAP,0.9736462672337208,0.0020842870415969782,0.0333372303960684,3,15
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6419984387197503,0.018429721354598035,0.09679761273608399,3,15
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7686182669789227,0.010139911245045753,0.09285037476577483,3,15
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,mAP,0.6762845742793218,0.01334936647796089,0.06951448698579146,3,15
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6763959040416915,0.013588636531116116,0.06317217259644474,3,15
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.7136831902237158,0.004117443455255648,0.05994696066103849,3,15
+Official-code adapted LidarGait++,train_video_count,len15_16videos_per_id,test_fixed5_c7,subject_macro,mAP,0.5468708676565438,0.03144923285480493,0.07704673481313883,3,15
+RGB-depth projection,train_clothing,len15_c2,test_general_to_personal,query_micro,mAP,0.9015731027832413,0.01184126509278715,0.06091966569719634,3,15
+RGB-depth projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank1,0.5306791569086652,0.008611136445363118,0.07116664071975105,3,15
+RGB-depth projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank5,0.7227166276346604,0.011606099946945088,0.066100261779178,3,15
+RGB-depth projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,mAP,0.5281379579904487,0.010896688227913325,0.07172940486263492,3,15
+RGB-depth projection,train_clothing,len15_c2,test_fixed5_to_special,subject_macro,mAP,0.5175957833981698,0.00945090889094777,0.06889514939518983,3,15
+RGB-depth projection,train_clothing,len15_c2,test_fixed5_c4c5_normal,subject_macro,mAP,0.5424084308421593,0.013493899608424158,0.0740328391884939,3,15
+RGB-depth projection,train_clothing,len15_c2,test_fixed5_c7,subject_macro,mAP,0.37999975526187985,0.006730258625376614,0.06749234866451068,3,15
+RGB-depth projection,train_clothing,len15_c3,test_general_to_personal,query_micro,mAP,0.9023022465573417,0.017053569846449654,0.044110607056313235,3,15
+RGB-depth projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank1,0.55160031225605,0.026885771763247312,0.07672957812652723,3,15
+RGB-depth projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank5,0.7019516003122561,0.018930804701060004,0.05227934735347408,3,15
+RGB-depth projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,mAP,0.5602212382353999,0.020965798246561453,0.07728274639602035,3,15
+RGB-depth projection,train_clothing,len15_c3,test_fixed5_to_special,subject_macro,mAP,0.5488958214048208,0.01872780477688781,0.07444141078993304,3,15
+RGB-depth projection,train_clothing,len15_c3,test_fixed5_c4c5_normal,subject_macro,mAP,0.5824758988079112,0.015743323446968622,0.07033484927082788,3,15
+RGB-depth projection,train_clothing,len15_c3,test_fixed5_c7,subject_macro,mAP,0.40401035247060163,0.018470853621627797,0.06509618270053327,3,15
+RGB-depth projection,train_video_count,len15_2videos_per_id,test_general_to_personal,query_micro,mAP,0.8022493001015895,0.025294507874990324,0.05782910706879951,3,15
+RGB-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank1,0.4549570647931304,0.03448768767593818,0.10825471870568966,3,15
+RGB-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank5,0.6724434035909446,0.05251799591429874,0.12564824164599017,3,15
+RGB-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,mAP,0.43206591357438473,0.0232633992947868,0.0747084946687472,3,15
+RGB-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.430436713379956,0.023485351343720446,0.07458507812158019,3,15
+RGB-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.4857567168752179,0.02224194482648485,0.06690008062387434,3,15
+RGB-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_c7,subject_macro,mAP,0.3057354431319982,0.043183942284065156,0.0978093741171606,3,15
+RGB-depth projection,train_video_count,len15_4videos_per_id,test_general_to_personal,query_micro,mAP,0.8867903551835737,0.0038499773937042186,0.02062855390190374,3,15
+RGB-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5356752537080406,0.01096681300786007,0.08782447737025847,3,15
+RGB-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank5,0.6696330991412959,0.007075890206791393,0.07070617496400286,3,15
+RGB-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,mAP,0.5093925955650818,0.007617254288454956,0.06980346617369618,3,15
+RGB-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.5089595319876744,0.007124637007827791,0.0687621175996069,3,15
+RGB-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.5437977998353891,0.0058030151434934184,0.06968764041046707,3,15
+RGB-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_c7,subject_macro,mAP,0.34696102356434694,0.01010912350854288,0.05714838930868468,3,15
+RGB-depth projection,train_video_count,len15_8videos_per_id,test_general_to_personal,query_micro,mAP,0.9259588892959497,0.007293298486680108,0.02928255334533531,3,15
+RGB-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5673692427790789,0.008807059969505353,0.07497787301294652,3,15
+RGB-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank5,0.6969555035128806,0.00813964739905515,0.06987562041769188,3,15
+RGB-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,mAP,0.5574755472656715,0.011466925936559886,0.0809202866129852,3,15
+RGB-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.5529807346388488,0.01200291859728453,0.07855919185701152,3,15
+RGB-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.5777913198564879,0.013627243416673632,0.07708280882517321,3,15
+RGB-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_c7,subject_macro,mAP,0.39606252838547035,0.006260506511309884,0.0767171165114187,3,15
+RGB-depth projection,train_video_count,len15_16videos_per_id,test_general_to_personal,query_micro,mAP,0.9482243501043398,0.01437105459548677,0.02400225846254286,3,15
+RGB-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5617486338797814,0.015188617026717048,0.07578500006456153,3,15
+RGB-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank5,0.702263856362217,0.00371440351393297,0.047171854970783314,3,15
+RGB-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,mAP,0.5686007532893821,0.007491676027739921,0.081527175853745,3,15
+RGB-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.5582051416960366,0.008685403709633522,0.07888032955961564,3,15
+RGB-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.5750893300443508,0.005009994756142672,0.08101193811156208,3,15
+RGB-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_c7,subject_macro,mAP,0.42875789547339077,0.004966610716426304,0.05768503713271272,3,15
+Gray-depth projection,train_clothing,len15_c2,test_general_to_personal,query_micro,mAP,0.8784208811819553,0.0036945881554822442,0.06290962435826225,3,15
+Gray-depth projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank1,0.6120218579234973,0.018238266164168383,0.06312864429506064,3,15
+Gray-depth projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank5,0.7931303669008587,0.004432496351780921,0.04692939380230799,3,15
+Gray-depth projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,mAP,0.5682602099486852,0.00617349156231269,0.07099229948275039,3,15
+Gray-depth projection,train_clothing,len15_c2,test_fixed5_to_special,subject_macro,mAP,0.5629640529371217,0.005728100016650185,0.06285019372664505,3,15
+Gray-depth projection,train_clothing,len15_c2,test_fixed5_c4c5_normal,subject_macro,mAP,0.5675052728488483,0.0029090393413210847,0.06327916329300011,3,15
+Gray-depth projection,train_clothing,len15_c2,test_fixed5_c7,subject_macro,mAP,0.43536502683845657,0.01585732151633729,0.07560527139673018,3,15
+Gray-depth projection,train_clothing,len15_c3,test_general_to_personal,query_micro,mAP,0.877988409318955,0.009185787759824548,0.0681597761822213,3,15
+Gray-depth projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank1,0.551912568306011,0.009125145477722071,0.06766308330113603,3,15
+Gray-depth projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank5,0.7701795472287275,0.022767941700546065,0.055035073441044885,3,15
+Gray-depth projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,mAP,0.5729051102368651,0.02354848839496677,0.0629796193254734,3,15
+Gray-depth projection,train_clothing,len15_c3,test_fixed5_to_special,subject_macro,mAP,0.5733367041666146,0.018101653003708404,0.057488352278881445,3,15
+Gray-depth projection,train_clothing,len15_c3,test_fixed5_c4c5_normal,subject_macro,mAP,0.5721524433328379,0.02192061096824193,0.06542016187412796,3,15
+Gray-depth projection,train_clothing,len15_c3,test_fixed5_c7,subject_macro,mAP,0.4441929240949038,0.018226640720171328,0.04864955328079553,3,15
+Gray-depth projection,train_video_count,len15_2videos_per_id,test_general_to_personal,query_micro,mAP,0.6095308795215111,0.02761722337027783,0.10025432695493847,3,15
+Gray-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank1,0.4387197501951601,0.027897592311246916,0.09597366344390502,3,15
+Gray-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7145979703356753,0.049980967893870465,0.11315092497794475,3,15
+Gray-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,mAP,0.34223224948291947,0.010877125436767483,0.04567988768120052,3,15
+Gray-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.3533440890625193,0.011964374622580593,0.04547521018296886,3,15
+Gray-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.37363413334152235,0.01328275304262706,0.062227641181902625,3,15
+Gray-depth projection,train_video_count,len15_2videos_per_id,test_fixed5_c7,subject_macro,mAP,0.26545111622247436,0.010802469853545348,0.03526195901599045,3,15
+Gray-depth projection,train_video_count,len15_4videos_per_id,test_general_to_personal,query_micro,mAP,0.8278007619154025,0.008583266683311828,0.06644754680413664,3,15
+Gray-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank1,0.4916471506635441,0.029266405466954224,0.09797503184392872,3,15
+Gray-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7078844652615143,0.04112247392638349,0.11371694852402348,3,15
+Gray-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,mAP,0.5056765658828916,0.030972093461214375,0.10886737818605066,3,15
+Gray-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.5123886465158113,0.02682328278665415,0.10032551050100393,3,15
+Gray-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.522140293673729,0.03172885700740405,0.11912347783171003,3,15
+Gray-depth projection,train_video_count,len15_4videos_per_id,test_fixed5_c7,subject_macro,mAP,0.3763489851624602,0.030221282349370635,0.08336972178130689,3,15
+Gray-depth projection,train_video_count,len15_8videos_per_id,test_general_to_personal,query_micro,mAP,0.8871873884756191,0.007755065339673529,0.06092155498256847,3,15
+Gray-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5987509758001561,0.020096290909856793,0.08257681939841191,3,15
+Gray-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank5,0.762529274004684,0.010563765698071692,0.07740770166298151,3,15
+Gray-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,mAP,0.595621293541233,0.011143438882299227,0.07482774597812374,3,15
+Gray-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6000888102207318,0.010154331430570568,0.06869372756245365,3,15
+Gray-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.5965116120265904,0.014551433242598185,0.08157968648795327,3,15
+Gray-depth projection,train_video_count,len15_8videos_per_id,test_fixed5_c7,subject_macro,mAP,0.46664033528210386,0.0035109957975883645,0.06494211744845088,3,15
+Gray-depth projection,train_video_count,len15_16videos_per_id,test_general_to_personal,query_micro,mAP,0.919981474822448,0.012688671522702597,0.03504249528985213,3,15
+Gray-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6177985948477752,0.02260246388212353,0.06465962563278213,3,15
+Gray-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7611241217798596,0.024214444992056165,0.05459571788462,3,15
+Gray-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,mAP,0.6180405628823099,0.011527797503610809,0.0710828709927518,3,15
+Gray-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.6190620281065214,0.01162580070946454,0.06277420217121499,3,15
+Gray-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6183151413673524,0.014068509459951552,0.07387755233732465,3,15
+Gray-depth projection,train_video_count,len15_16videos_per_id,test_fixed5_c7,subject_macro,mAP,0.47474345730100237,0.01602603251848285,0.06659322552454086,3,15
+Silhouette projection,train_clothing,len15_c2,test_general_to_personal,query_micro,mAP,0.8819517473487389,0.004764011496639729,0.07508365266942081,3,15
+Silhouette projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank1,0.5669008587041374,0.027421699797158697,0.0544177282420932,3,15
+Silhouette projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,rank5,0.7233411397345823,0.012604860510188566,0.050001447301689116,3,15
+Silhouette projection,train_clothing,len15_c2,test_fixed5_to_special,query_micro,mAP,0.5478154914155544,0.015384717509368371,0.060662841796483534,3,15
+Silhouette projection,train_clothing,len15_c2,test_fixed5_to_special,subject_macro,mAP,0.5321062823543724,0.014030304641165977,0.057426551201914956,3,15
+Silhouette projection,train_clothing,len15_c2,test_fixed5_c4c5_normal,subject_macro,mAP,0.5634644548400668,0.018735645192806467,0.06770397748132084,3,15
+Silhouette projection,train_clothing,len15_c2,test_fixed5_c7,subject_macro,mAP,0.3877198760801306,0.021597908960226307,0.0602710755305359,3,15
+Silhouette projection,train_clothing,len15_c3,test_general_to_personal,query_micro,mAP,0.8858944651909124,0.006772557891425814,0.06913108044457866,3,15
+Silhouette projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank1,0.517408274785324,0.013948796155623458,0.052994828772953924,3,15
+Silhouette projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,rank5,0.6802498048399688,0.023013927584934642,0.06923463776465623,3,15
+Silhouette projection,train_clothing,len15_c3,test_fixed5_to_special,query_micro,mAP,0.5392816273648231,0.014329518430736477,0.06185819778337171,3,15
+Silhouette projection,train_clothing,len15_c3,test_fixed5_to_special,subject_macro,mAP,0.5299473547253346,0.013651669964453543,0.05982916669681131,3,15
+Silhouette projection,train_clothing,len15_c3,test_fixed5_c4c5_normal,subject_macro,mAP,0.5756336998208073,0.018624688094295766,0.0660675207748195,3,15
+Silhouette projection,train_clothing,len15_c3,test_fixed5_c7,subject_macro,mAP,0.3756115624267194,0.021584127172010185,0.06578119516635579,3,15
+Silhouette projection,train_video_count,len15_2videos_per_id,test_general_to_personal,query_micro,mAP,0.8825703821467613,0.014618373813739047,0.060315975687631106,3,15
+Silhouette projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank1,0.6026541764246683,0.014941052284490547,0.0807772060802749,3,15
+Silhouette projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7832943013270883,0.024085246531147058,0.0789004370560096,3,15
+Silhouette projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,query_micro,mAP,0.5780286875014701,0.009146208199546061,0.04955675727755106,3,15
+Silhouette projection,train_video_count,len15_2videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.5776628204458727,0.010035205832381438,0.04513726717765827,3,15
+Silhouette projection,train_video_count,len15_2videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6390758858593204,0.006842356545022645,0.054233308069252216,3,15
+Silhouette projection,train_video_count,len15_2videos_per_id,test_fixed5_c7,subject_macro,mAP,0.46248390098412834,0.00958825902435595,0.04303521911464621,3,15
+Silhouette projection,train_video_count,len15_4videos_per_id,test_general_to_personal,query_micro,mAP,0.8815948503346615,0.0017600105970487793,0.06806083864834873,3,15
+Silhouette projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank1,0.536768149882904,0.03368025657765831,0.059530860462079706,3,15
+Silhouette projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7041373926619828,0.031280981341998165,0.06404294700130088,3,15
+Silhouette projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,query_micro,mAP,0.5371257421132367,0.027884018350865996,0.0724812885336694,3,15
+Silhouette projection,train_video_count,len15_4videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.533894976675244,0.026644786417277792,0.06627704155365555,3,15
+Silhouette projection,train_video_count,len15_4videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6019688240919051,0.025858629772505394,0.062430034324841795,3,15
+Silhouette projection,train_video_count,len15_4videos_per_id,test_fixed5_c7,subject_macro,mAP,0.3840445365901623,0.0289404017116274,0.05885715130322032,3,15
+Silhouette projection,train_video_count,len15_8videos_per_id,test_general_to_personal,query_micro,mAP,0.910295142602492,0.010190779676841231,0.045303947208255736,3,15
+Silhouette projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5556596409055425,0.0024287820743331243,0.04242662376208999,3,15
+Silhouette projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7400468384074941,0.007386027274013995,0.056627357012715485,3,15
+Silhouette projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,query_micro,mAP,0.565841637584937,0.004817830825741228,0.06024712494695281,3,15
+Silhouette projection,train_video_count,len15_8videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.5580665007915552,0.005910790372557215,0.055404650618619766,3,15
+Silhouette projection,train_video_count,len15_8videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.6105282923138318,0.0023607302519817693,0.056488894252996975,3,15
+Silhouette projection,train_video_count,len15_8videos_per_id,test_fixed5_c7,subject_macro,mAP,0.4094029261026946,0.017952407663276878,0.052786637946189485,3,15
+Silhouette projection,train_video_count,len15_16videos_per_id,test_general_to_personal,query_micro,mAP,0.9251252320773071,0.00461714936087543,0.05697314375624103,3,15
+Silhouette projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank1,0.5820452771272443,0.013474128968238212,0.06840581534299994,3,15
+Silhouette projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,rank5,0.7122560499609679,0.014362081154192219,0.06817022301047079,3,15
+Silhouette projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,query_micro,mAP,0.5900680675358162,0.01270341449109378,0.07128302729612361,3,15
+Silhouette projection,train_video_count,len15_16videos_per_id,test_fixed5_to_special,subject_macro,mAP,0.5755666578244859,0.015322351864823282,0.06698377861494482,3,15
+Silhouette projection,train_video_count,len15_16videos_per_id,test_fixed5_c4c5_normal,subject_macro,mAP,0.621616633405275,0.008738752276817016,0.06221132889377299,3,15
+Silhouette projection,train_video_count,len15_16videos_per_id,test_fixed5_c7,subject_macro,mAP,0.425339554388904,0.014263743974252724,0.06620886717143956,3,15

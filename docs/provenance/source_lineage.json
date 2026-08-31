@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "formal_proposed_name": "MPH-Gait",
+  "formal_proposed_full_name": "Multi-scale Point-Hierarchy Gait Network",
+  "source_hashes": {
+    "pc_v1_research_model": "d85eb82aa772253e0dbd3c2b0c6a25710ae3c9dad88751ad262e0abaa1f5e0ae",
+    "pc_v1_release_model": "0fe216b358c06263d3c0d47c4ea5d19af85820c043a2471c75350266fcf3323f",
+    "mph_gait_research_tokenizer": "1534af74a7f03173d2ccb7be8fb35680e605790507c8f0250ee7e38f5ff27915",
+    "mph_gait_research_model": "7195c8e85f29be02fdfd23a08cab65ab3be0f340618955507d43471bed8b2320",
+    "mph_gait_release_tokenizer": "cdf8c30b2f48e9c0d393072979046cf59d7b14b8f8a66f1fdc53ef1eeac4c44e",
+    "mph_gait_release_model": "ffd6a76a166193a73d453a11b52514334801f76a89aef1217e936d5808b063bf",
+    "projection_release_model": "2fd74f8c697e79ca344c3eedb6a1dfe982d6b1052b85abc4ee0d5e0e56f1470e",
+    "pc_v1_release_trainer": "c449e876e493bce39328fbcf1bc5b57a3ee7867f8cc3abde43aa2cdfed717fd6",
+    "mph_gait_release_trainer": "ed7a7f90ed9cd27fd38128a53a448ac54059923724818761bea6613956b54dbf",
+    "projection_release_trainer": "bd53b5ec6aa6fdba6b9327ee573849da738d8f9f6098d5b39d3472629361f9c2",
+    "shared_pointcloud_trainer": "eb7a4d90a08fd682c53f776cc6c0125606c33c0d9c53b3060d01e5b63c820579",
+    "shared_pointcloud_dataset": "ec2bbb870980e5947079efd30593c290d748475b88ef380e5774961df6a7e7bb",
+    "shared_protocol": "4e42ebbb643be9ef6288398495ddcf007fc41e260fd46f9135ad8634db69efa0",
+    "shared_retrieval_utils": "ae7338dccd0f4a29c44c6209bd075c3bc0a33674f52da06fff7637d889a4c1d1",
+    "lidargaitpp_release_dataset_adapter": "c6ec59657e9f1b9adc4c06d003ee217b022050760f933e452526cc9cf8ec4612",
+    "lidargaitpp_release_evaluator": "c9c5ec4cd5b92494ffbcaa7c18c03ba576d42fbb033a562ca533d066f374e374",
+    "shared_followup_config_tool": "d383f5b4523772ab799610e10c67e2143fd977f5ba95a3199cb9d46c2a50a08b",
+    "shared_followup_summarizer": "fa1a37f54b90141a1811a7d35831b7ee9a2cc872b9f88464146c5db2b798df96",
+    "shared_followup_runner": "cc64f7c84d0ce1d95aca0c71631da2b684932bf1950325b4b3f2a7bf3fd01445"
+  },
+  "opengait": {
+    "repository": "https://github.com/ShiqiYu/OpenGait.git",
+    "commit": "f754f6f3831e9f83bb28f4e2f63dd43d8bcf9dc4",
+    "lidargaitpp_model_sha256": "180cdb41da76cdd8950159469e72c525b4e555d1060edc89f3ee887f96aae748",
+    "lidargaitpp_utils_sha256": "15ff5ff8f904f5b13d35d5d86f35d36814202769aed2bb0c12434acf43b881f8"
+  },
+  "notes": [
+    "Public class and config names were normalized without changing the selected computation graph.",
+    "The model-equivalence audit checks state-dict structure, parameters, and deterministic forward output."
+  ]
+}

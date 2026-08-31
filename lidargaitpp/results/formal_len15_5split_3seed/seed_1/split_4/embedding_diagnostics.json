@@ -1,0 +1,10 @@
+{
+  "num_embeddings": 820,
+  "embedding_dim": 7936,
+  "all_finite": true,
+  "feature_std_mean": 0.004401538986712694,
+  "sample_norm_mean": 1.0,
+  "sample_norm_std": 1.0498608560283174e-07,
+  "off_diagonal_cosine_mean": 0.800239622592926,
+  "off_diagonal_cosine_std": 0.09467414021492004
+}

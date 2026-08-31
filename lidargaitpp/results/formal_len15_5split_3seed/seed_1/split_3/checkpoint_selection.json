@@ -1,0 +1,104 @@
+{
+  "selection_pair": "val",
+  "selection_metric": "query_micro_mAP",
+  "selection_uses_fixed_special": false,
+  "tie_break": "earliest_iteration",
+  "selected_iteration": 5000,
+  "selected_checkpoint": "<CHECKPOINT_ROOT>/lidargaitpp/seed_1/split_3/best.pt",
+  "selected_val_rank1": 1.0,
+  "selected_val_rank5": 1.0,
+  "selected_val_mAP": 1.0,
+  "selected_val_subject_macro_mAP": 1.0,
+  "candidates": [
+    {
+      "iteration": 1000,
+      "checkpoint": "historical_checkpoints/iteration_01000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9453339956700801,
+      "subject_macro_mAP": 0.9453339956700801,
+      "summary": "historical_selection/iteration_01000.json"
+    },
+    {
+      "iteration": 2000,
+      "checkpoint": "historical_checkpoints/iteration_02000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9952498778700829,
+      "subject_macro_mAP": 0.9952498778700829,
+      "summary": "historical_selection/iteration_02000.json"
+    },
+    {
+      "iteration": 3000,
+      "checkpoint": "historical_checkpoints/iteration_03000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9989805117249488,
+      "subject_macro_mAP": 0.9989805117249488,
+      "summary": "historical_selection/iteration_03000.json"
+    },
+    {
+      "iteration": 4000,
+      "checkpoint": "historical_checkpoints/iteration_04000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.995993135869503,
+      "subject_macro_mAP": 0.995993135869503,
+      "summary": "historical_selection/iteration_04000.json"
+    },
+    {
+      "iteration": 5000,
+      "checkpoint": "historical_checkpoints/iteration_05000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 1.0,
+      "subject_macro_mAP": 1.0,
+      "summary": "historical_selection/iteration_05000.json"
+    },
+    {
+      "iteration": 6000,
+      "checkpoint": "historical_checkpoints/iteration_06000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 1.0,
+      "subject_macro_mAP": 1.0,
+      "summary": "historical_selection/iteration_06000.json"
+    },
+    {
+      "iteration": 7000,
+      "checkpoint": "historical_checkpoints/iteration_07000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 1.0,
+      "subject_macro_mAP": 1.0,
+      "summary": "historical_selection/iteration_07000.json"
+    },
+    {
+      "iteration": 8000,
+      "checkpoint": "historical_checkpoints/iteration_08000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 1.0,
+      "subject_macro_mAP": 1.0,
+      "summary": "historical_selection/iteration_08000.json"
+    },
+    {
+      "iteration": 9000,
+      "checkpoint": "historical_checkpoints/iteration_09000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 1.0,
+      "subject_macro_mAP": 1.0,
+      "summary": "historical_selection/iteration_09000.json"
+    },
+    {
+      "iteration": 10000,
+      "checkpoint": "historical_checkpoints/iteration_10000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 1.0,
+      "subject_macro_mAP": 1.0,
+      "summary": "historical_selection/iteration_10000.json"
+    }
+  ]
+}

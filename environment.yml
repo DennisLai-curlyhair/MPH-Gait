@@ -1,0 +1,21 @@
+name: mph-gait
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip
+  - numpy
+  - pyyaml
+  - pillow
+  - scipy
+  - scikit-learn
+  - pandas
+  - tqdm
+  - tensorboard
+  - pip:
+      - opencv-python
+      - wandb
+# Install a mutually compatible PyTorch/Torchvision/CUDA build for the target
+# machine. LidarGait++ training and evaluation require CUDA.

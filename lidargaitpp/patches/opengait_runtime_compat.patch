@@ -1,0 +1,39 @@
+diff --git a/opengait/main.py b/opengait/main.py
+index 087edcb..480b7cb 100644
+--- a/opengait/main.py
++++ b/opengait/main.py
+@@ -34,7 +34,8 @@ def initialization(cfgs, training):
+ 
+     msg_mgr.log_info(engine_cfg)
+ 
+-    seed = torch.distributed.get_rank()
++    seed_offset = int(os.environ.get("OPENGAIT_SEED_OFFSET", "0"))
++    seed = seed_offset + torch.distributed.get_rank()
+     init_seeds(seed)
+ 
+ 
+diff --git a/opengait/utils/msg_manager.py b/opengait/utils/msg_manager.py
+index b464a19..5080072 100644
+--- a/opengait/utils/msg_manager.py
++++ b/opengait/utils/msg_manager.py
+@@ -2,7 +2,10 @@ import time
+ import torch
+ 
+ import numpy as np
+-import torchvision.utils as vutils
++try:
++    import torchvision.utils as vutils
++except Exception:
++    vutils = None
+ import os.path as osp
+ from time import strftime, localtime
+ 
+@@ -65,6 +68,8 @@ class MessageManager:
+                     'Not Expected --Summary-- type [{}] appear!!!{}'.format(k, self.writer_hparams))
+                 continue
+             board_name = k.replace(module_name + "/", '')
++            if module_name == 'image' and vutils is None:
++                continue
+             writer_module = getattr(self.writer, 'add_' + module_name)
+             v = v.detach() if is_tensor(v) else v
+             v = vutils.make_grid(

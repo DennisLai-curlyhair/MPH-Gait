@@ -1,0 +1,159 @@
+{
+  "enabled": true,
+  "name": "fixed_special5_subject_holdout_5split_v1",
+  "version": "fixed_special5_subject_holdout_5split_v1_20260724",
+  "num_splits": 5,
+  "split_index": 4,
+  "fold_index": 4,
+  "general_test_group_index": 4,
+  "val_group_index": 0,
+  "all_ids": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29
+  ],
+  "development_ids": [
+    1,
+    2,
+    4,
+    5,
+    6,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27,
+    28,
+    29
+  ],
+  "fixed_special_test_ids": [
+    3,
+    7,
+    18,
+    19,
+    26
+  ],
+  "train_ids": [
+    2,
+    4,
+    8,
+    10,
+    12,
+    13,
+    14,
+    16,
+    17,
+    21,
+    22,
+    23,
+    24,
+    25,
+    27
+  ],
+  "val_ids": [
+    1,
+    5,
+    9,
+    11,
+    20
+  ],
+  "general_test_ids": [
+    6,
+    15,
+    28,
+    29
+  ],
+  "mixed_test_ids": [
+    3,
+    6,
+    7,
+    15,
+    18,
+    19,
+    26,
+    28,
+    29
+  ],
+  "development_groups": [
+    [
+      1,
+      5,
+      9,
+      11,
+      20
+    ],
+    [
+      12,
+      17,
+      21,
+      22,
+      25
+    ],
+    [
+      2,
+      10,
+      14,
+      24,
+      27
+    ],
+    [
+      4,
+      8,
+      13,
+      16,
+      23
+    ],
+    [
+      6,
+      15,
+      28,
+      29
+    ]
+  ],
+  "selection_uses_fixed_special": false,
+  "overlaps": {
+    "train_val": [],
+    "train_general_test": [],
+    "train_fixed_special": [],
+    "val_general_test": [],
+    "val_fixed_special": []
+  }
+}

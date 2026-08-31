@@ -1,0 +1,16 @@
+{
+  "release_method": "pointnet_tmax",
+  "historical_run_source_hashes": {
+    "trainer": "566a39dea6ea42542578ee3404f39c23fd993fa74f5d9210e113e19da84f5c51",
+    "base_model": "d85eb82aa772253e0dbd3c2b0c6a25710ae3c9dad88751ad262e0abaa1f5e0ae",
+    "protocol": "6f4ca35b1f8a688350fa16803b4c42b32d30222155086ee0c743d9102c9e13e6",
+    "dataset": "ec2bbb870980e5947079efd30593c290d748475b88ef380e5774961df6a7e7bb"
+  },
+  "runtime": {
+    "python": "3.12.13",
+    "torch": "2.10.0",
+    "cuda": "13.0"
+  },
+  "release_source_lineage": "docs/provenance/source_lineage.json",
+  "note": "Historical hashes use stable public labels; see the equivalence audit."
+}

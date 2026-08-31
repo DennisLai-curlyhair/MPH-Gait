@@ -1,0 +1,104 @@
+{
+  "selection_pair": "val",
+  "selection_metric": "query_micro_mAP",
+  "selection_uses_fixed_special": false,
+  "tie_break": "earliest_iteration",
+  "selected_iteration": 7000,
+  "selected_checkpoint": "<CHECKPOINT_ROOT>/lidargaitpp/seed_1/split_4/best.pt",
+  "selected_val_rank1": 1.0,
+  "selected_val_rank5": 1.0,
+  "selected_val_mAP": 0.9783660876750946,
+  "selected_val_subject_macro_mAP": 0.9783660876750947,
+  "candidates": [
+    {
+      "iteration": 1000,
+      "checkpoint": "historical_checkpoints/iteration_01000.pt",
+      "rank1": 0.97,
+      "rank5": 1.0,
+      "mAP": 0.9030448079109192,
+      "subject_macro_mAP": 0.9030448079109192,
+      "summary": "historical_selection/iteration_01000.json"
+    },
+    {
+      "iteration": 2000,
+      "checkpoint": "historical_checkpoints/iteration_02000.pt",
+      "rank1": 0.97,
+      "rank5": 1.0,
+      "mAP": 0.9436089393496513,
+      "subject_macro_mAP": 0.9436089393496513,
+      "summary": "historical_selection/iteration_02000.json"
+    },
+    {
+      "iteration": 3000,
+      "checkpoint": "historical_checkpoints/iteration_03000.pt",
+      "rank1": 0.99,
+      "rank5": 1.0,
+      "mAP": 0.9138630485534668,
+      "subject_macro_mAP": 0.9138630485534668,
+      "summary": "historical_selection/iteration_03000.json"
+    },
+    {
+      "iteration": 4000,
+      "checkpoint": "historical_checkpoints/iteration_04000.pt",
+      "rank1": 0.95,
+      "rank5": 0.99,
+      "mAP": 0.9302143520116806,
+      "subject_macro_mAP": 0.9302143520116806,
+      "summary": "historical_selection/iteration_04000.json"
+    },
+    {
+      "iteration": 5000,
+      "checkpoint": "historical_checkpoints/iteration_05000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9705625033378601,
+      "subject_macro_mAP": 0.9705625033378602,
+      "summary": "historical_selection/iteration_05000.json"
+    },
+    {
+      "iteration": 6000,
+      "checkpoint": "historical_checkpoints/iteration_06000.pt",
+      "rank1": 0.98,
+      "rank5": 1.0,
+      "mAP": 0.9680856782197952,
+      "subject_macro_mAP": 0.9680856782197953,
+      "summary": "historical_selection/iteration_06000.json"
+    },
+    {
+      "iteration": 7000,
+      "checkpoint": "historical_checkpoints/iteration_07000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9783660876750946,
+      "subject_macro_mAP": 0.9783660876750947,
+      "summary": "historical_selection/iteration_07000.json"
+    },
+    {
+      "iteration": 8000,
+      "checkpoint": "historical_checkpoints/iteration_08000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9703518807888031,
+      "subject_macro_mAP": 0.9703518807888031,
+      "summary": "historical_selection/iteration_08000.json"
+    },
+    {
+      "iteration": 9000,
+      "checkpoint": "historical_checkpoints/iteration_09000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9744798058271408,
+      "subject_macro_mAP": 0.9744798058271407,
+      "summary": "historical_selection/iteration_09000.json"
+    },
+    {
+      "iteration": 10000,
+      "checkpoint": "historical_checkpoints/iteration_10000.pt",
+      "rank1": 1.0,
+      "rank5": 1.0,
+      "mAP": 0.9740973877906799,
+      "subject_macro_mAP": 0.97409738779068,
+      "summary": "historical_selection/iteration_10000.json"
+    }
+  ]
+}
