@@ -14,5 +14,9 @@ checkout. The included compatibility patch only adds deterministic seed offset
 support and tolerates an unavailable optional torchvision visualization import;
 it does not modify the official LidarGait++ model files.
 
-Review and preserve the upstream OpenGait license and citation requirements
-before redistribution.
+OpenGait and LidarGait++ are not authored or owned by this project. Their names,
+source code, models, and associated rights remain with their respective owners.
+The repository provides an adapter, protocol conversion, evaluation code, and a
+pinned-source fetcher solely to reproduce the comparison reported by this
+project. The upstream source is not vendored or relicensed here, and its
+academic-use and citation terms remain applicable.

@@ -13,6 +13,3 @@ archives:
     url: TBD
     sha256: TBD
     format: TBD
-notes:
-  - Replace every TBD before a public release.
-  - Keep the Fixed-Special5 metadata in Git even if raw data require controlled access.

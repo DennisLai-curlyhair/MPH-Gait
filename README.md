@@ -8,6 +8,15 @@ baseline, three cylindrical projection baselines, an official-code adapted
 LidarGait++ comparison, the fixed-special5 subject-disjoint protocol, and
 reproducible experiment launchers.
 
+## Research Reproducibility Notice
+
+This repository is published to support academic evaluation and reproduction
+of the reported experiments. Third-party projects, model implementations,
+names, and trademarks remain the property of their respective owners and are
+governed by their original terms. This project does not claim ownership of or
+grant additional rights to those materials. See
+[`docs/THIRD_PARTY.md`](docs/THIRD_PARTY.md) for source and version details.
+
 ## Method Overview
 
 | Method | Input | Parameters | Descriptor |
@@ -32,7 +41,7 @@ MPH_Gait/
 ├── lidargaitpp/            # OpenGait adapter, pinned-source fetcher, patch
 ├── projection-baselines/   # RGB-depth, gray-depth, silhouette baselines
 ├── shared/                 # protocol, datasets, trainer, retrieval metrics
-├── dataset/                # schema, split manifest, external-data placeholders
+├── dataset/                # schema, split manifest, and download metadata
 ├── final-training/         # 24-identity release-weight training protocol
 ├── docs/                   # architecture, protocol, experiments, results
 ├── scripts/                # repository validation and aggregate launchers
@@ -92,8 +101,8 @@ dataset/local/projection/
 ```
 
 Expected schemas and the fixed-special5 split definition are documented in
-[`dataset/README.md`](dataset/README.md) and `dataset/metadata/`. Update
-`dataset/download_links.yaml` when the public data URL is available.
+[`dataset/README.md`](dataset/README.md) and `dataset/metadata/`. Dataset
+availability and access metadata in `dataset/download_links.yaml`: **TBD**.
 
 No launcher uses train, validation, or test identities outside the committed
 protocol manifest. The fixed special-clothing identities are P003, P007, P018,
@@ -198,9 +207,6 @@ diagrams are available in:
 
 ## Citation and License
 
-Publication metadata is provided in `CITATION.cff.template`. Rename and
-complete it as `CITATION.cff` after the paper metadata is final.
+Publication citation metadata: **TBD** (`CITATION.cff.template`).
 
-The project license has not yet been selected; see `LICENSE_PENDING.md`.
-A public repository should not be tagged as an open-source release until the
-license and third-party redistribution review are complete.
+Project license: **TBD** (`LICENSE_PENDING.md`).

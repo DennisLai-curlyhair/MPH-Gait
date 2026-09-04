@@ -16,6 +16,5 @@ Create links with:
 bash dataset/scripts/link_local_data.sh /path/to/pointcloud /path/to/projection
 ```
 
-Before publication, fill `download_links.yaml`, document consent/access terms,
-and provide archive hashes. Do not publish participant data until the relevant
-ethics, consent, and de-identification requirements are satisfied.
+Dataset distribution URL, archive hashes, consent/access terms, and ethics
+statement: **TBD** (`download_links.yaml`).

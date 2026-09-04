@@ -6,15 +6,15 @@
 bash dataset/scripts/link_local_data.sh /path/to/pointcloud /path/to/projection
 ```
 
-Public archives should follow `dataset/metadata/dataset_schema.yaml`; update
-`dataset/download_links.yaml` with URLs and SHA-256 values.
+Dataset archive URLs and SHA-256 values: **TBD**
+(`dataset/download_links.yaml`).
 
 ## Formal Runs
 
 ```bash
-WANDB=off bash projection/scripts/run_len15_5split_3seed.sh
-WANDB=off bash pc_v1/scripts/run_len15_5split_3seed.sh
-WANDB=off bash mph_gait/scripts/run_len15_5split_3seed.sh
+WANDB=off bash projection-baselines/scripts/run_len15_5split_3seed.sh
+WANDB=off bash pointnet-tmax/scripts/run_len15_5split_3seed.sh
+WANDB=off bash mph-gait/scripts/run_len15_5split_3seed.sh
 
 bash lidargaitpp/scripts/fetch_opengait.sh
 WANDB=off bash lidargaitpp/scripts/run_len15_5split_3seed.sh
@@ -24,7 +24,7 @@ Restrict a smoke run with environment variables:
 
 ```bash
 SEEDS=0 SPLITS=0 DRY_RUN=1 WANDB=off \
-  bash mph_gait/scripts/run_len15_5split_3seed.sh
+  bash mph-gait/scripts/run_len15_5split_3seed.sh
 ```
 
 ## Checkpoints
