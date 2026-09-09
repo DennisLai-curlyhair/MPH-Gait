@@ -1,0 +1,75 @@
+{
+  "schema_version": 1,
+  "distribution_url": "https://drive.google.com/drive/folders/1LXsMvUE-496sVhIrpKOs6q_Fyo0gRbsW?usp=sharing",
+  "scope": "formal_fixed_special5_len15_5split_3seed",
+  "checkpoint_count": 90,
+  "archives": [
+    {
+      "method": "pointnet_tmax",
+      "filename": "pointnet-tmax_fixed-special5_len15_5split_3seed.tar.gz",
+      "checkpoint_count": 15,
+      "format": "tar.gz",
+      "size_bytes": 52853925,
+      "sha256": "f5c7e4bee6673067954d5dc1d2ffe0dd676f37b2219cd47a5257497663b00f07",
+      "url": "https://drive.google.com/file/d/1FGjlnOd4sWkrEbYc3BBveAUVBCeoxDR4/view",
+      "archive_root": "pointnet_tmax",
+      "url_type": "file_page"
+    },
+    {
+      "method": "mph_gait",
+      "filename": "mph-gait_fixed-special5_len15_5split_3seed.tar.gz",
+      "checkpoint_count": 15,
+      "format": "tar.gz",
+      "size_bytes": 68361502,
+      "sha256": "09c941427156696ce67d85ae110bd444da58fb3a091ef89c74c3b312889faa83",
+      "url": "https://drive.google.com/file/d/19N0wBatWWAxIKOLgqYvKKMmJdMmo1Y4m/view",
+      "archive_root": "mph_gait",
+      "url_type": "file_page"
+    },
+    {
+      "method": "lidargaitpp",
+      "filename": "lidargaitpp_fixed-special5_len15_5split_3seed.tar.gz",
+      "checkpoint_count": 15,
+      "format": "tar.gz",
+      "size_bytes": 275359791,
+      "sha256": "d7d2cf277cb3f08dc4061ff3090d41a629721adea1c2df414110e5794d5d1e9f",
+      "url": "https://drive.google.com/file/d/1VZ__6dIBtvSTG8CIXMWgkZh1LPmIAt3m/view",
+      "archive_root": "lidargaitpp",
+      "url_type": "file_page"
+    },
+    {
+      "method": "projection_rgb_depth",
+      "filename": "projection-rgb-depth_fixed-special5_len15_5split_3seed.tar.gz",
+      "checkpoint_count": 15,
+      "format": "tar.gz",
+      "size_bytes": 794495405,
+      "sha256": "fbfd3536a28d2d2e4870631f15283901712a0d8a333701f39303618a1f95e1f5",
+      "url": "https://drive.google.com/file/d/1x_FkSsrIvSq2XzuNUXdi65YWN6aOVQym/view",
+      "archive_root": "projection_rgb_depth",
+      "url_type": "file_page"
+    },
+    {
+      "method": "projection_gray_depth",
+      "filename": "projection-gray-depth_fixed-special5_len15_5split_3seed.tar.gz",
+      "checkpoint_count": 15,
+      "format": "tar.gz",
+      "size_bytes": 794150763,
+      "sha256": "8c6983cfcbd97e2eb96f02863532a8015d40aa59c00c0695741fd0c9018f6075",
+      "url": "https://drive.google.com/file/d/1NHu9vMqYo1_dgBsEqw6eGRS6ZvEOk-sJ/view",
+      "archive_root": "projection_gray_depth",
+      "url_type": "file_page"
+    },
+    {
+      "method": "projection_silhouette",
+      "filename": "projection-silhouette_fixed-special5_len15_5split_3seed.tar.gz",
+      "checkpoint_count": 15,
+      "format": "tar.gz",
+      "size_bytes": 794919696,
+      "sha256": "71542c2bf62c26b9202653905053d50f688de419b9befc2f116030f2582478e1",
+      "url": "https://drive.google.com/file/d/1q8ExwobH8RXwaxv_27qvruKdtYEdjoPp/view",
+      "archive_root": "projection_silhouette",
+      "url_type": "file_page"
+    }
+  ],
+  "distribution_subdirectory": "checkpoints"
+}

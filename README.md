@@ -201,7 +201,13 @@ WANDB=off bash final-training/scripts/run_all_final24_3seed.sh
 
 Compact, auditable results are stored under each method's `results/` folder
 and in [`docs/results/main_results.csv`](docs/results/main_results.csv).
-Generated model checkpoints and full optimizer states are excluded.
+Binary checkpoints remain outside Git history. The formal T=15 release is
+packaged as six method-specific archives containing 90 original checkpoints
+and matching run metadata. See [Checkpoint distribution](docs/CHECKPOINTS.md)
+for filenames, verification, model loading, and the separate Final-24
+deployment bundles. Download the archives from the
+[checkpoint folder](https://drive.google.com/drive/folders/1LXsMvUE-496sVhIrpKOs6q_Fyo0gRbsW?usp=sharing)
+under `checkpoints/`.
 
 Protocol details, metric definitions, experiment matrices, and architecture
 diagrams are available in:

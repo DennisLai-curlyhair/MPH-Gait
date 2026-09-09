@@ -34,7 +34,20 @@ SEEDS=0 SPLITS=0 DRY_RUN=1 WANDB=off \
 Each method's `checkpoints/checkpoint_manifest.csv` defines the external release
 filename, seed, split, expected bytes, and SHA-256. Binary weights are omitted
 from Git history and should be placed according to `release_filename` after
-download.
+download from the
+[checkpoint folder](https://drive.google.com/drive/folders/1LXsMvUE-496sVhIrpKOs6q_Fyo0gRbsW?usp=sharing)
+under `checkpoints/`. The six archive definitions are in
+[`docs/checkpoint_downloads.json`](checkpoint_downloads.json);
+[checkpoint instructions](CHECKPOINTS.md) cover extraction and model loading.
+
+After extraction, verify against the committed checkpoint CSVs:
+
+```bash
+python scripts/verify_formal_checkpoints.py \
+  --checkpoint-root /path/to/extracted-checkpoints
+```
+
+Use `--method mph_gait` when only that method was downloaded.
 
 ## Integrity
 
