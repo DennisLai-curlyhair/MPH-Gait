@@ -100,9 +100,17 @@ dataset/local/pointcloud/
 dataset/local/projection/
 ```
 
-Expected schemas and the fixed-special5 split definition are documented in
-[`dataset/README.md`](dataset/README.md) and `dataset/metadata/`. Dataset
-availability and access metadata in `dataset/download_links.yaml`: **TBD**.
+Download `dataset.tar.gz`, `dataset_proj.tar.gz`, and `SHA256SUMS` from the
+[Google Drive dataset folder](https://drive.google.com/drive/folders/1Ec63IgVLfJkezbmzXADklmkVndpL73V2?usp=drive_link).
+Verify the checksums and extract the archives outside the repository, then
+run `dataset/scripts/link_local_data.sh` as documented in
+[`dataset/README.md`](dataset/README.md). Archive metadata are recorded in
+[`dataset/download_links.yaml`](dataset/download_links.yaml), and the
+fixed-special5 split definition is provided in `dataset/metadata/`.
+Access/consent terms: **TBD**.
+
+For access to original acquisition files (raw data, RGB images, and depth
+images), please contact [dennis.y.lai@gmail.com](mailto:dennis.y.lai@gmail.com).
 
 No launcher uses train, validation, or test identities outside the committed
 protocol manifest. The fixed special-clothing identities are P003, P007, P018,

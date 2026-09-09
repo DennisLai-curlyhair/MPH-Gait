@@ -6,8 +6,10 @@
 bash dataset/scripts/link_local_data.sh /path/to/pointcloud /path/to/projection
 ```
 
-Dataset archive URLs and SHA-256 values: **TBD**
-(`dataset/download_links.yaml`).
+Dataset downloads and SHA256 checksums are recorded in
+[`dataset/download_links.yaml`](../dataset/download_links.yaml). Follow
+[`dataset/README.md`](../dataset/README.md) to download, verify, and extract
+both archives before creating the local links above.
 
 ## Formal Runs
 

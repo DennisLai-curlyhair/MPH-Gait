@@ -1,15 +1,27 @@
 schema_version: 1
 dataset_name: PersonRecognitionWalking_29
+archive_date: '2026-09-09'
+checksum_file: SHA256SUMS
+distribution_url: https://drive.google.com/drive/folders/1Ec63IgVLfJkezbmzXADklmkVndpL73V2?usp=drive_link
+raw_data_contact_email: dennis.y.lai@gmail.com
 license_or_access_terms: TBD
 ethics_and_consent_statement_url: TBD
 archives:
   pointcloud:
+    filename: dataset.tar.gz
     destination: dataset
-    url: TBD
-    sha256: TBD
-    format: TBD
+    repository_path: dataset/local/pointcloud
+    url: https://drive.google.com/drive/folders/1Ec63IgVLfJkezbmzXADklmkVndpL73V2?usp=drive_link
+    url_type: shared_folder
+    sha256: cccfd2a84172d9acae7f090d0b38a0cdce267b0a6ca60a21cf1801c732328d3d
+    size_bytes: 7940886048
+    format: tar.gz
   projection:
+    filename: dataset_proj.tar.gz
     destination: dataset_proj
-    url: TBD
-    sha256: TBD
-    format: TBD
+    repository_path: dataset/local/projection
+    url: https://drive.google.com/drive/folders/1Ec63IgVLfJkezbmzXADklmkVndpL73V2?usp=drive_link
+    url_type: shared_folder
+    sha256: 59730fcbd9c7c99ff0bbe11b84581ab23fab07c256a01d20db170a480c48421c
+    size_bytes: 896399158
+    format: tar.gz
