@@ -55,6 +55,9 @@ All methods share the same protocol and retrieval endpoints through
 
 ## Installation
 
+Only load trusted datasets and checkpoints. See [Security and data handling](SECURITY.md)
+for checkpoint-loading risks, dependency advisories, and sensitive-file handling.
+
 Linux with an NVIDIA GPU is recommended. LidarGait++ training requires CUDA.
 
 ```bash

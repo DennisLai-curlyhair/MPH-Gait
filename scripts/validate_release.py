@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import re
 import sys
 from pathlib import Path
 from typing import Any
@@ -12,12 +13,15 @@ import yaml
 
 ROOT = Path(__file__).resolve().parents[1]
 FORBIDDEN_TEXT = (
-    "/home/yenting/",
     "Point_Cloud_Gait_Recognition_V2/",
     "benchmark_baseline_v2/",
     "MPH_Gait_Release/",
     "experiment_propose/",
 )
+LOCAL_HOME_PATH = re.compile(
+    r"""(?:/(?:home|Users)/[^/\s"'<>]+/|[A-Za-z]:\\+Users\\+[^\\\s"'<>]+\\+)"""
+)
+
 
 
 def load_yaml(path: Path) -> dict[str, Any]:
@@ -82,6 +86,8 @@ def validate_text_paths() -> list[str]:
         if "results" in path.parts or "provenance" in path.parts:
             continue
         text = path.read_text(encoding="utf-8", errors="replace")
+        if LOCAL_HOME_PATH.search(text):
+            failures.append(f"{path.relative_to(ROOT)}: local home-directory path")
         for marker in FORBIDDEN_TEXT:
             if marker in text:
                 failures.append(f"{path.relative_to(ROOT)}: {marker}")
